@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptImage" id="Background" x="0.0" y="0.0" width="1000.0"
+             height="600.0" fileName="{PROJECT_FOLDER}BG18.png"/>
+  <Component type="ScriptButton" id="LogoWebButton" x="3.0" y="4.0" filmstripImage="{PROJECT_FOLDER}NNButton.png"
+             scaleFactor="0.119999997317791" width="60.0" height="30.0" bgColour="16777215"
+             itemColour="3355443" itemColour2="1118481" textColour="16777215"
+             saveInPreset="0" enableMidiLearn="0"/>
+  <Component type="ScriptImage" id="NokFXtxt" x="250.0" y="49.0" fileName="{PROJECT_FOLDER}Noktxt.png"
+             width="36.0" height="30.0"/>
+  <Component type="ScriptSlider" id="NokMainFXknb" x="220.0" y="81.0" filmstripImage="{PROJECT_FOLDER}BigKnob31.png"
+             height="99.0" numStrips="31.0" width="99.0" scaleFactor="0.75"
+             max="0.0" min="-15.0" mode="Decibel" middlePosition="-7.5" showTextBox="0"
+             scrollWheel="0" enableMidiLearn="0"/>
+  <Component type="ScriptLabel" id="NokThreshtxt" x="220.0" y="181.0" width="96.0"
+             height="20.0" text="THRESH" fontSize="12.0" fontStyle="Bold"
+             textColour="4292006610"/>
+  <Component type="ScriptImage" id="AirFXtxt" x="718.0" y="49.0" fileName="{PROJECT_FOLDER}Airtxt.png"
+             width="30.0" height="25.0"/>
+  <Component type="ScriptSlider" id="AirMainFXknb" x="685.0" y="81.0" filmstripImage="{PROJECT_FOLDER}BigKnob31.png"
+             height="99.0" numStrips="31.0" width="99.0" scaleFactor="0.75"
+             processorId="AirFX" parameterId="WetLevel" mode="NormalizedPercentage"
+             suffix="%" middlePosition="0.125" max="0.25" showTextBox="0"
+             scrollWheel="0" enableMidiLearn="0"/>
+  <Component type="ScriptLabel" id="AirThreshtxt" x="685.0" y="181.0" width="96.0"
+             height="20.0" text="WET" fontSize="12.0" fontStyle="Bold" textColour="4292006610"/>
+  <Component type="ScriptPanel" id="BassBoxPanel" x="0.0" y="223.0" width="1000.0"
+             height="110.0" bgColour="16777215" itemColour="0" itemColour2="0"
+             textColour="16777215">
+    <Component type="ScriptLabel" id="808BassLPLab" x="945.0" y="31.0" width="30.0"
+               height="20.0" text="LP" fontSize="10.0" fontStyle="Bold" parentComponent="BassBoxPanel"/>
+    <Component type="ScriptPanel" id="SynthBassSpecPanel" x="140.0" y="17.0"
+               width="100.0" height="90.0" parentComponent="BassBoxPanel"/>
+    <Component type="ScriptFloatingTile" id="SynthBassSpecTile" x="90.0" y="12.0"
+               ContentType="AudioAnalyser" bgColour="3355443" itemColour="4294967295"
+               itemColour2="9784396" textColour="0" Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;SynthBassSpec&quot;,&#13;&#10;  &quot;Index&quot;: 0,&#13;&#10;  &quot;FollowWorkspace&quot;: false&#13;&#10;}"
+               parentComponent="BassBoxPanel"/>
+    <Component type="ScriptSlider" id="SynthBassAttknb" x="30.0" y="48.0" showTextBox="0"
+               scrollWheel="0" enableMidiLearn="0" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               numStrips="101.0" scaleFactor="0.5" width="27.0" height="27.0"
+               processorId="DefaultEnvelope17" parameterId="Attack" mode="Time"
+               max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               parentComponent="BassBoxPanel"/>
+    <Component type="ScriptLabel" id="SynthBassAttLab" x="33.0" y="31.0" width="20.0"
+               height="20.0" text="A" fontSize="10.0" fontStyle="Bold" parentComponent="BassBoxPanel"/>
+    <Component type="ScriptSlider" id="SynthBassRelknb" x="83.0" y="48.0" showTextBox="0"
+               scrollWheel="0" enableMidiLearn="0" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               numStrips="101.0" scaleFactor="0.5" width="27.0" height="27.0"
+               processorId="DefaultEnvelope17" parameterId="Release" mode="Time"
+               max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               parentComponent="BassBoxPanel"/>
+    <Component type="ScriptLabel" id="SynthBassRelLab" x="86.0" y="31.0" width="20.0"
+               height="20.0" text="R" fontSize="10.0" fontStyle="Bold" parentComponent="BassBoxPanel"/>
+    <Component type="ScriptSlider" id="SynthBassHPknb" x="270.0" y="48.0" showTextBox="0"
+               scrollWheel="0" enableMidiLearn="0" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               numStrips="101.0" scaleFactor="0.5" width="27.0" height="27.0"
+               processorId="SynthBassHP" parameterId="Freq" mode="Frequency"
+               min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz" middlePosition="1500.0"
+               defaultValue="20.0" parentComponent="BassBoxPanel"/>
+    <Component type="ScriptLabel" id="SynthBassHPLab" x="269.0" y="31.0" width="30.0"
+               height="20.0" text="HP" fontSize="10.0" fontStyle="Bold" parentComponent="BassBoxPanel"/>
+    <Component type="ScriptSlider" id="SynthBassLPknb" x="320.0" y="48.0" showTextBox="0"
+               scrollWheel="0" enableMidiLearn="0" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               numStrips="101.0" scaleFactor="0.5" width="27.0" height="27.0"
+               processorId="SynthBassLP" parameterId="Freq" mode="Frequency"
+               min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz" middlePosition="1500.0"
+               defaultValue="20000.0" parentComponent="BassBoxPanel"/>
+    <Component type="ScriptLabel" id="SynthBassLPLab" x="319.0" y="31.0" width="30.0"
+               height="20.0" text="LP" fontSize="10.0" fontStyle="Bold" parentComponent="BassBoxPanel"/>
+    <Component type="ScriptPanel" id="808BassSpecPanel" x="765.0" y="17.0" width="100.0"
+               height="90.0" parentComponent="BassBoxPanel"/>
+    <Component type="ScriptFloatingTile" id="808BassSpecTile" x="770.0" y="22.0"
+               ContentType="AudioAnalyser" bgColour="12517376" itemColour="4294967295"
+               itemColour2="16711680" textColour="16711680" Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;808BassSpec&quot;,&#13;&#10;  &quot;Index&quot;: 2,&#13;&#10;  &quot;FollowWorkspace&quot;: false&#13;&#10;}"
+               height="80.0" width="90.0" parentComponent="BassBoxPanel" itemColour3="16711680"/>
+    <Component type="ScriptSlider" id="808BassAttknb" x="656.0" y="48.0" showTextBox="0"
+               scrollWheel="0" enableMidiLearn="0" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               numStrips="101.0" scaleFactor="0.5" width="27.0" height="27.0"
+               processorId="DefaultEnvelope18" parameterId="Attack" mode="Time"
+               max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               parentComponent="BassBoxPanel"/>
+    <Component type="ScriptLabel" id="808BassAttLab" x="659.0" y="31.0" width="20.0"
+               height="20.0" text="A" fontSize="10.0" fontStyle="Bold" parentComponent="BassBoxPanel"/>
+    <Component type="ScriptSlider" id="808BassRelknb" x="709.0" y="48.0" showTextBox="0"
+               scrollWheel="0" enableMidiLearn="0" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               numStrips="101.0" scaleFactor="0.5" width="27.0" height="27.0"
+               processorId="DefaultEnvelope18" parameterId="Release" mode="Time"
+               max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               parentComponent="BassBoxPanel"/>
+    <Component type="ScriptLabel" id="808BassRelLab" x="712.0" y="31.0" width="20.0"
+               height="20.0" text="R" fontSize="10.0" fontStyle="Bold" parentComponent="BassBoxPanel"/>
+    <Component type="ScriptSlider" id="808BassHPknb" x="896.0" y="48.0" showTextBox="0"
+               scrollWheel="0" enableMidiLearn="0" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               numStrips="101.0" scaleFactor="0.5" width="27.0" height="27.0"
+               processorId="808BassHP" parameterId="Freq" mode="Frequency" min="20.0"
+               max="20000.0" stepSize="1.0" suffix=" Hz" middlePosition="1500.0"
+               defaultValue="20.0" parentComponent="BassBoxPanel"/>
+    <Component type="ScriptLabel" id="808BassHPLab" x="895.0" y="31.0" width="30.0"
+               height="20.0" text="HP" fontSize="10.0" fontStyle="Bold" parentComponent="BassBoxPanel"/>
+    <Component type="ScriptSlider" id="808BassLPknb" x="946.0" y="48.0" showTextBox="0"
+               scrollWheel="0" enableMidiLearn="0" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               numStrips="101.0" scaleFactor="0.5" width="27.0" height="27.0"
+               processorId="808BassLP" parameterId="Freq" mode="Frequency" min="20.0"
+               max="20000.0" stepSize="1.0" suffix=" Hz" middlePosition="1500.0"
+               defaultValue="20000.0" parentComponent="BassBoxPanel"/>
+    <Component type="ScriptComboBox" id="SynthBassCombo" x="137.0" y="-7.0"
+               max="180" width="30.0" bgColour="16777215" itemColour="0" text="808BassCombo"
+               items="808 01&#10;808 02&#10;808 03&#10;808 04&#10;808 05&#10;808 06&#10;808 07&#10;808 08&#10;808 09&#10;808 10&#10;CR 01&#10;CR 02&#10;CR 03&#10;CR 04&#10;CR 05&#10;CR 06&#10;CR 07&#10;CR 08&#10;CR 09&#10;CR 10&#10;Clap 01&#10;Clap 02&#10;Clap 03&#10;Clap 04&#10;Clap 05&#10;Clap 06&#10;Clap 07&#10;Clap 08&#10;Clap 09&#10;Clap 10&#10;Clap 11&#10;Clap 12&#10;Clap 13&#10;Clap 14&#10;Clap 15&#10;Clap 16&#10;Clap 17&#10;Clap 18&#10;Clap 19&#10;Clap 20&#10;Hat 01&#10;Hat 02&#10;Hat 03&#10;Hat 04&#10;Hat 05&#10;Hat 06&#10;Hat 07&#10;Hat 08&#10;Hat 09&#10;Hat 10&#10;Hat 11&#10;Hat 12&#10;Hat 13&#10;Hat 14&#10;Hat 15&#10;Hat 16&#10;Hat 17&#10;Hat 18&#10;Hat 19&#10;Hat 20&#10;Hat 21&#10;Hat 22&#10;Hat 23&#10;Hat 24&#10;Hat 25&#10;Hat 26&#10;Hat 27&#10;Hat 28&#10;Hat 29&#10;Hat 30&#10;Hat 31&#10;Hat 32&#10;Hat 33&#10;Hat 34&#10;Hat 35&#10;Hat 36&#10;Hat 37&#10;Hat 38&#10;Hat 39&#10;Hat 40&#10;Hat13&#10;Kick 01&#10;Kick 02&#10;Kick 03&#10;Kick 04&#10;Kick 05&#10;Kick 06&#10;Kick 07&#10;Kick 08&#10;Kick 09&#10;Kick 10&#10;OH 01&#10;OH 02&#10;OH 03&#10;OH 04&#10;OH 05&#10;OH 06&#10;OH 07&#10;OH 08&#10;OH 09&#10;OH 10&#10;OH 11&#10;OH 12&#10;OH 13&#10;OH 14&#10;OH 15&#10;OH 16&#10;OH 17&#10;OH 19&#10;OH 20&#10;P 01&#10;P 02&#10;P 03&#10;P 04&#10;P 05&#10;P 06&#10;P 07&#10;P 08&#10;P 09&#10;P 10&#10;P 11&#10;P 12&#10;P 13&#10;P 14&#10;P 15&#10;P 16&#10;P 17&#10;P 18&#10;P 19&#10;P 20&#10;P 21&#10;P 22&#10;P 23&#10;P 24&#10;P 25&#10;P 26&#10;P 27&#10;P 28&#10;P 29&#10;P 30&#10;P 31&#10;P 32&#10;P 33&#10;P 34&#10;P 35&#10;P 36&#10;P 37&#10;P 38&#10;P 39&#10;P 40&#10;SB 01&#10;SB 02&#10;SB 03&#10;SB 04&#10;SB 05&#10;SB 06&#10;SB 07&#10;SB 08&#10;SB 09&#10;SB 10&#10;Snare 01&#10;Snare 02&#10;Snare 03&#10;Snare 04&#10;Snare 05&#10;Snare 06&#10;Snare 07&#10;Snare 08&#10;Snare 09&#10;Snare 10&#10;Snare 11&#10;Snare 12&#10;Snare 13&#10;Snare 14&#10;Snare 15&#10;Snare 16&#10;Snare 17&#10;Snare 18&#10;Snare 19&#10;Snare 20"
+               itemColour2="1118481" parentComponent="BassBoxPanel"/>
+    <Component type="ScriptComboBox" id="Bass808Combo" x="767.0" y="-7.0" max="180"
+               width="30.0" bgColour="16777215" itemColour="0" items="808 01&#10;808 02&#10;808 03&#10;808 04&#10;808 05&#10;808 06&#10;808 07&#10;808 08&#10;808 09&#10;808 10&#10;CR 01&#10;CR 02&#10;CR 03&#10;CR 04&#10;CR 05&#10;CR 06&#10;CR 07&#10;CR 08&#10;CR 09&#10;CR 10&#10;Clap 01&#10;Clap 02&#10;Clap 03&#10;Clap 04&#10;Clap 05&#10;Clap 06&#10;Clap 07&#10;Clap 08&#10;Clap 09&#10;Clap 10&#10;Clap 11&#10;Clap 12&#10;Clap 13&#10;Clap 14&#10;Clap 15&#10;Clap 16&#10;Clap 17&#10;Clap 18&#10;Clap 19&#10;Clap 20&#10;Hat 01&#10;Hat 02&#10;Hat 03&#10;Hat 04&#10;Hat 05&#10;Hat 06&#10;Hat 07&#10;Hat 08&#10;Hat 09&#10;Hat 10&#10;Hat 11&#10;Hat 12&#10;Hat 13&#10;Hat 14&#10;Hat 15&#10;Hat 16&#10;Hat 17&#10;Hat 18&#10;Hat 19&#10;Hat 20&#10;Hat 21&#10;Hat 22&#10;Hat 23&#10;Hat 24&#10;Hat 25&#10;Hat 26&#10;Hat 27&#10;Hat 28&#10;Hat 29&#10;Hat 30&#10;Hat 31&#10;Hat 32&#10;Hat 33&#10;Hat 34&#10;Hat 35&#10;Hat 36&#10;Hat 37&#10;Hat 38&#10;Hat 39&#10;Hat 40&#10;Hat13&#10;Kick 01&#10;Kick 02&#10;Kick 03&#10;Kick 04&#10;Kick 05&#10;Kick 06&#10;Kick 07&#10;Kick 08&#10;Kick 09&#10;Kick 10&#10;OH 01&#10;OH 02&#10;OH 03&#10;OH 04&#10;OH 05&#10;OH 06&#10;OH 07&#10;OH 08&#10;OH 09&#10;OH 10&#10;OH 11&#10;OH 12&#10;OH 13&#10;OH 14&#10;OH 15&#10;OH 16&#10;OH 17&#10;OH 19&#10;OH 20&#10;P 01&#10;P 02&#10;P 03&#10;P 04&#10;P 05&#10;P 06&#10;P 07&#10;P 08&#10;P 09&#10;P 10&#10;P 11&#10;P 12&#10;P 13&#10;P 14&#10;P 15&#10;P 16&#10;P 17&#10;P 18&#10;P 19&#10;P 20&#10;P 21&#10;P 22&#10;P 23&#10;P 24&#10;P 25&#10;P 26&#10;P 27&#10;P 28&#10;P 29&#10;P 30&#10;P 31&#10;P 32&#10;P 33&#10;P 34&#10;P 35&#10;P 36&#10;P 37&#10;P 38&#10;P 39&#10;P 40&#10;SB 01&#10;SB 02&#10;SB 03&#10;SB 04&#10;SB 05&#10;SB 06&#10;SB 07&#10;SB 08&#10;SB 09&#10;SB 10&#10;Snare 01&#10;Snare 02&#10;Snare 03&#10;Snare 04&#10;Snare 05&#10;Snare 06&#10;Snare 07&#10;Snare 08&#10;Snare 09&#10;Snare 10&#10;Snare 11&#10;Snare 12&#10;Snare 13&#10;Snare 14&#10;Snare 15&#10;Snare 16&#10;Snare 17&#10;Snare 18&#10;Snare 19&#10;Snare 20"
+               itemColour2="1118481" parentComponent="BassBoxPanel"/>
+    <Component type="ScriptSlider" id="SynthBassGainknb" x="295.0" y="68.0"
+               parentComponent="BassBoxPanel" mode="Decibel" min="-100.0" max="30.0"
+               stepSize="0.1000000014901161" suffix=" dB" middlePosition="-18.0"
+               filmstripImage="{PROJECT_FOLDER}panknob101-2.png" numStrips="101.0"
+               scaleFactor="0.5" width="27.0" height="27.0" processorId="Simple Gain17"
+               parameterId="Gain" defaultValue="-5.0"/>
+    <Component type="ScriptLabel" id="SynthBassHGainLab1" x="291.0" y="92.0"
+               width="35.0" height="20.0" text="GAIN" fontSize="10.0" fontStyle="Bold"
+               parentComponent="BassBoxPanel"/>
+    <Component type="ScriptLabel" id="SynthBassHGainLab2" x="917.0" y="92.0"
+               width="35.0" height="20.0" text="GAIN" fontSize="10.0" fontStyle="Bold"
+               parentComponent="BassBoxPanel"/>
+    <Component type="ScriptSlider" id="SynthBassGainknb1" x="921.0" y="68.0"
+               parentComponent="BassBoxPanel" mode="Decibel" min="-100.0" max="30.0"
+               stepSize="0.1000000014901161" suffix=" dB" middlePosition="-18.0"
+               filmstripImage="{PROJECT_FOLDER}panknob101-2.png" numStrips="101.0"
+               scaleFactor="0.5" width="27.0" height="27.0" processorId="Simple Gain18"
+               parameterId="Gain" defaultValue="-5.0"/>
+  </Component>
+  <Component type="ScriptPanel" id="Drum Panel" x="0.0" y="335.0" width="1000.0"
+             height="115.0" bgColour="16777215" itemColour="0" itemColour2="0"
+             textColour="16777215">
+    <Component type="ScriptLabel" id="KickLab" x="54.0" y="17.0" text="K" fontSize="8.0"
+               fontStyle="Regular" width="15.0" height="15.0" parentComponent="Drum Panel"/>
+    <Component type="ScriptSlider" id="KickPanKnb" x="52.0" y="91.0" middlePosition="0.0"
+               stepSize="1.0" min="-100.0" max="100.0" suffix="L" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               processorId="Simple Gain1" width="19.0" height="19.0" mode="Pan"
+               numStrips="101.0" scaleFactor="0.3499999940395355" parentComponent="Drum Panel"
+               showTextBox="0" scrollWheel="0" enableMidiLearn="0" parameterId="Balance"/>
+    <Component type="ScriptSlider" id="KickGainSld" x="56.0" y="30.0" middlePosition="-18.0"
+               stepSize="0.1000000014901161" min="-80.0" max="30.0" suffix=" dB"
+               filmstripImage="{PROJECT_FOLDER}GainSlider128.png" width="11.0"
+               mode="Decibel" numStrips="128.0" height="60.0" scaleFactor="0.5"
+               parentComponent="Drum Panel" showTextBox="0" scrollWheel="0"
+               enableMidiLearn="0" processorId="Simple Gain1" parameterId="Gain"/>
+    <Component type="ScriptLabel" id="Snare1Lab" x="144.0" y="17.0" text="S1"
+               fontSize="8.0" fontStyle="Regular" width="25.0" height="15.0"
+               parentComponent="Drum Panel"/>
+    <Component type="ScriptSlider" id="Snare1GainSld" x="151.0" y="30.0" middlePosition="-18.0"
+               stepSize="0.1000000014901161" min="-80.0" max="30.0" suffix=" dB"
+               filmstripImage="{PROJECT_FOLDER}GainSlider128.png" width="11.0"
+               mode="Decibel" numStrips="128.0" height="60.0" scaleFactor="0.5"
+               parentComponent="Drum Panel" showTextBox="0" scrollWheel="0"
+               enableMidiLearn="0" processorId="Simple Gain2" parameterId="Gain"/>
+    <Component type="ScriptSlider" id="Snare1PanKnb" x="147.0" y="91.0" middlePosition="0.0"
+               stepSize="1.0" min="-100.0" max="100.0" suffix="L" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               processorId="Simple Gain2" width="19.0" height="19.0" mode="Pan"
+               numStrips="101.0" scaleFactor="0.3499999940395355" parentComponent="Drum Panel"
+               showTextBox="0" scrollWheel="0" enableMidiLearn="0" parameterId="Balance"/>
+    <Component type="ScriptLabel" id="Snare2Lab" x="206.0" y="17.0" text="S2"
+               fontSize="8.0" fontStyle="Regular" width="25.0" height="15.0"
+               parentComponent="Drum Panel"/>
+    <Component type="ScriptSlider" id="Snare2GainSld" x="213.0" y="30.0" middlePosition="-18.0"
+               stepSize="0.1000000014901161" min="-80.0" max="30.0" suffix=" dB"
+               filmstripImage="{PROJECT_FOLDER}GainSlider128.png" width="11.0"
+               mode="Decibel" numStrips="128.0" height="60.0" scaleFactor="0.5"
+               parentComponent="Drum Panel" showTextBox="0" scrollWheel="0"
+               enableMidiLearn="0" processorId="Simple Gain3" parameterId="Gain"/>
+    <Component type="ScriptSlider" id="Snare2PanKnb" x="209.0" y="91.0" middlePosition="0.0"
+               stepSize="1.0" min="-100.0" max="100.0" suffix="L" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               processorId="Simple Gain3" width="19.0" height="19.0" mode="Pan"
+               numStrips="101.0" scaleFactor="0.3499999940395355" parentComponent="Drum Panel"
+               showTextBox="0" scrollWheel="0" enableMidiLearn="0" parameterId="Balance"/>
+    <Component type="ScriptLabel" id="Clap1Lab" x="268.0" y="17.0" text="C1"
+               fontSize="8.0" fontStyle="Regular" width="25.0" height="15.0"
+               parentComponent="Drum Panel"/>
+    <Component type="ScriptSlider" id="Clap1GainSld" x="275.0" y="30.0" middlePosition="-18.0"
+               stepSize="0.1000000014901161" min="-80.0" max="30.0" suffix=" dB"
+               filmstripImage="{PROJECT_FOLDER}GainSlider128.png" width="11.0"
+               mode="Decibel" numStrips="128.0" height="60.0" scaleFactor="0.5"
+               parentComponent="Drum Panel" showTextBox="0" scrollWheel="0"
+               enableMidiLearn="0" processorId="Simple Gain4" parameterId="Gain"/>
+    <Component type="ScriptSlider" id="Clap1PanKnb" x="271.0" y="91.0" middlePosition="0.0"
+               stepSize="1.0" min="-100.0" max="100.0" suffix="L" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               processorId="Simple Gain4" width="19.0" height="19.0" mode="Pan"
+               numStrips="101.0" scaleFactor="0.3499999940395355" parentComponent="Drum Panel"
+               showTextBox="0" scrollWheel="0" enableMidiLearn="0" parameterId="Balance"/>
+    <Component type="ScriptLabel" id="Clap2Lab" x="330.0" y="17.0" text="C2"
+               fontSize="8.0" fontStyle="Regular" width="25.0" height="15.0"
+               parentComponent="Drum Panel"/>
+    <Component type="ScriptSlider" id="Clap2GainSld" x="337.0" y="30.0" middlePosition="-18.0"
+               stepSize="0.1000000014901161" min="-80.0" max="30.0" suffix=" dB"
+               filmstripImage="{PROJECT_FOLDER}GainSlider128.png" width="11.0"
+               mode="Decibel" numStrips="128.0" height="60.0" scaleFactor="0.5"
+               parentComponent="Drum Panel" showTextBox="0" scrollWheel="0"
+               enableMidiLearn="0" processorId="Simple Gain5" parameterId="Gain"/>
+    <Component type="ScriptSlider" id="Clap2PanKnb" x="333.0" y="91.0" middlePosition="0.0"
+               stepSize="1.0" min="-100.0" max="100.0" suffix="L" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               processorId="Simple Gain5" width="19.0" height="19.0" mode="Pan"
+               numStrips="101.0" scaleFactor="0.3499999940395355" parentComponent="Drum Panel"
+               showTextBox="0" scrollWheel="0" enableMidiLearn="0" parameterId="Balance"/>
+    <Component type="ScriptLabel" id="Hat1Lab" x="395.0" y="17.0" text="H1"
+               fontSize="8.0" fontStyle="Regular" width="25.0" height="15.0"
+               parentComponent="Drum Panel"/>
+    <Component type="ScriptSlider" id="Hat1PanKnb" x="398.0" y="91.0" middlePosition="0.0"
+               stepSize="1.0" min="-100.0" max="100.0" suffix="L" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               processorId="Simple Gain6" width="19.0" height="19.0" mode="Pan"
+               numStrips="101.0" scaleFactor="0.3499999940395355" parentComponent="Drum Panel"
+               showTextBox="0" scrollWheel="0" enableMidiLearn="0" parameterId="Balance"/>
+    <Component type="ScriptSlider" id="Hat1GainSld" x="402.0" y="30.0" middlePosition="-18.0"
+               stepSize="0.1000000014901161" min="-80.0" max="30.0" suffix=" dB"
+               filmstripImage="{PROJECT_FOLDER}GainSlider128.png" width="11.0"
+               mode="Decibel" numStrips="128.0" height="60.0" scaleFactor="0.5"
+               parentComponent="Drum Panel" showTextBox="0" scrollWheel="0"
+               enableMidiLearn="0" processorId="Simple Gain6" parameterId="Gain"/>
+    <Component type="ScriptLabel" id="Hat2Lab" x="444.0" y="17.0" text="H2"
+               fontSize="8.0" fontStyle="Regular" width="25.0" height="15.0"
+               parentComponent="Drum Panel"/>
+    <Component type="ScriptSlider" id="Hat2PanKnb" x="447.0" y="91.0" middlePosition="0.0"
+               stepSize="1.0" min="-100.0" max="100.0" suffix="L" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               processorId="Simple Gain7" width="19.0" height="19.0" mode="Pan"
+               numStrips="101.0" scaleFactor="0.3499999940395355" parentComponent="Drum Panel"
+               showTextBox="0" scrollWheel="0" enableMidiLearn="0" parameterId="Balance"/>
+    <Component type="ScriptSlider" id="Hat2GainSld" x="451.0" y="30.0" middlePosition="-18.0"
+               stepSize="0.1000000014901161" min="-80.0" max="30.0" suffix=" dB"
+               filmstripImage="{PROJECT_FOLDER}GainSlider128.png" width="11.0"
+               mode="Decibel" numStrips="128.0" height="60.0" scaleFactor="0.5"
+               parentComponent="Drum Panel" showTextBox="0" scrollWheel="0"
+               enableMidiLearn="0" processorId="Simple Gain7" parameterId="Gain"/>
+    <Component type="ScriptLabel" id="Hat3Lab" x="494.0" y="17.0" text="H3"
+               fontSize="8.0" fontStyle="Regular" width="25.0" height="15.0"
+               parentComponent="Drum Panel"/>
+    <Component type="ScriptSlider" id="Hat3GainSld" x="501.0" y="30.0" middlePosition="-18.0"
+               stepSize="0.1000000014901161" min="-80.0" max="30.0" suffix=" dB"
+               filmstripImage="{PROJECT_FOLDER}GainSlider128.png" width="11.0"
+               mode="Decibel" numStrips="128.0" height="60.0" scaleFactor="0.5"
+               parentComponent="Drum Panel" showTextBox="0" scrollWheel="0"
+               enableMidiLearn="0" processorId="Simple Gain8" parameterId="Gain"/>
+    <Component type="ScriptSlider" id="Hat3PanKnb" x="497.0" y="91.0" middlePosition="0.0"
+               stepSize="1.0" min="-100.0" max="100.0" suffix="L" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               processorId="Simple Gain8" width="19.0" height="19.0" mode="Pan"
+               numStrips="101.0" scaleFactor="0.3499999940395355" parentComponent="Drum Panel"
+               showTextBox="0" scrollWheel="0" enableMidiLearn="0" parameterId="Balance"/>
+    <Component type="ScriptLabel" id="Hat4Lab" x="544.0" y="17.0" text="H4"
+               fontSize="8.0" fontStyle="Regular" width="25.0" height="15.0"
+               parentComponent="Drum Panel"/>
+    <Component type="ScriptSlider" id="Hat4GainSld" x="551.0" y="30.0" middlePosition="-18.0"
+               stepSize="0.1000000014901161" min="-80.0" max="30.0" suffix=" dB"
+               filmstripImage="{PROJECT_FOLDER}GainSlider128.png" width="11.0"
+               mode="Decibel" numStrips="128.0" height="60.0" scaleFactor="0.5"
+               parentComponent="Drum Panel" showTextBox="0" scrollWheel="0"
+               enableMidiLearn="0" processorId="Simple Gain9" parameterId="Gain"/>
+    <Component type="ScriptSlider" id="Hat4PanKnb" x="547.0" y="91.0" middlePosition="0.0"
+               stepSize="1.0" min="-100.0" max="100.0" suffix="L" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               processorId="Simple Gain9" width="19.0" height="19.0" mode="Pan"
+               numStrips="101.0" scaleFactor="0.3499999940395355" parentComponent="Drum Panel"
+               showTextBox="0" scrollWheel="0" enableMidiLearn="0" parameterId="Balance"/>
+    <Component type="ScriptLabel" id="OpenHat1Lab" x="594.0" y="17.0" text="OH1"
+               fontSize="8.0" fontStyle="Regular" width="25.0" height="15.0"
+               parentComponent="Drum Panel"/>
+    <Component type="ScriptSlider" id="OpenHat1GainSld" x="601.0" y="30.0" middlePosition="-18.0"
+               stepSize="0.1000000014901161" min="-80.0" max="30.0" suffix=" dB"
+               filmstripImage="{PROJECT_FOLDER}GainSlider128.png" width="11.0"
+               mode="Decibel" numStrips="128.0" height="60.0" scaleFactor="0.5"
+               parentComponent="Drum Panel" showTextBox="0" scrollWheel="0"
+               enableMidiLearn="0" processorId="Simple Gain10" parameterId="Gain"/>
+    <Component type="ScriptSlider" id="OpenHat1PanKnb" x="597.0" y="91.0" middlePosition="0.0"
+               stepSize="1.0" min="-100.0" max="100.0" suffix="L" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               processorId="Simple Gain10" width="19.0" height="19.0" mode="Pan"
+               numStrips="101.0" scaleFactor="0.3499999940395355" parentComponent="Drum Panel"
+               showTextBox="0" scrollWheel="0" enableMidiLearn="0" parameterId="Balance"/>
+    <Component type="ScriptLabel" id="OpenHat2Lab" x="643.0" y="17.0" text="OH2"
+               fontSize="8.0" fontStyle="Regular" width="25.0" height="15.0"
+               parentComponent="Drum Panel"/>
+    <Component type="ScriptSlider" id="OpenHat2GainSld" x="650.0" y="30.0" middlePosition="-18.0"
+               stepSize="0.1000000014901161" min="-80.0" max="30.0" suffix=" dB"
+               filmstripImage="{PROJECT_FOLDER}GainSlider128.png" width="11.0"
+               mode="Decibel" numStrips="128.0" height="60.0" scaleFactor="0.5"
+               parentComponent="Drum Panel" showTextBox="0" scrollWheel="0"
+               enableMidiLearn="0" processorId="Simple Gain11" parameterId="Gain"/>
+    <Component type="ScriptSlider" id="OpenHat2PanKnb" x="646.0" y="91.0" middlePosition="0.0"
+               stepSize="1.0" min="-100.0" max="100.0" suffix="L" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               processorId="Simple Gain11" width="19.0" height="19.0" mode="Pan"
+               numStrips="101.0" scaleFactor="0.3499999940395355" parentComponent="Drum Panel"
+               showTextBox="0" scrollWheel="0" enableMidiLearn="0" parameterId="Balance"/>
+    <Component type="ScriptLabel" id="CrashLab" x="706.0" y="17.0" text="CR"
+               fontSize="8.0" fontStyle="Regular" width="25.0" height="15.0"
+               parentComponent="Drum Panel"/>
+    <Component type="ScriptSlider" id="CrashPanKnb" x="709.0" y="91.0" middlePosition="0.0"
+               stepSize="1.0" min="-100.0" max="100.0" suffix="L" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               processorId="Simple Gain12" width="19.0" height="19.0" mode="Pan"
+               numStrips="101.0" scaleFactor="0.3499999940395355" parentComponent="Drum Panel"
+               showTextBox="0" scrollWheel="0" enableMidiLearn="0" parameterId="Balance"/>
+    <Component type="ScriptSlider" id="CrashGainSld" x="713.0" y="30.0" middlePosition="-18.0"
+               stepSize="0.1000000014901161" min="-80.0" max="30.0" suffix=" dB"
+               filmstripImage="{PROJECT_FOLDER}GainSlider128.png" width="11.0"
+               mode="Decibel" numStrips="128.0" height="60.0" scaleFactor="0.5"
+               parentComponent="Drum Panel" showTextBox="0" scrollWheel="0"
+               enableMidiLearn="0" processorId="Simple Gain12" parameterId="Gain"/>
+    <Component type="ScriptLabel" id="Perc1Lab" x="768.0" y="17.0" text="P1"
+               fontSize="8.0" fontStyle="Regular" width="25.0" height="15.0"
+               parentComponent="Drum Panel"/>
+    <Component type="ScriptSlider" id="Perc1PanKnb" x="771.0" y="91.0" middlePosition="0.0"
+               stepSize="1.0" min="-100.0" max="100.0" suffix="L" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               processorId="Simple Gain13" width="19.0" height="19.0" mode="Pan"
+               numStrips="101.0" scaleFactor="0.3499999940395355" parentComponent="Drum Panel"
+               showTextBox="0" scrollWheel="0" enableMidiLearn="0" parameterId="Balance"/>
+    <Component type="ScriptSlider" id="Perc1GainSld" x="775.0" y="30.0" middlePosition="-18.0"
+               stepSize="0.1000000014901161" min="-80.0" max="30.0" suffix=" dB"
+               filmstripImage="{PROJECT_FOLDER}GainSlider128.png" width="11.0"
+               mode="Decibel" numStrips="128.0" height="60.0" scaleFactor="0.5"
+               parentComponent="Drum Panel" showTextBox="0" scrollWheel="0"
+               enableMidiLearn="0" processorId="Simple Gain13" parameterId="Gain"/>
+    <Component type="ScriptLabel" id="Perc2Lab" x="831.0" y="17.0" text="P2"
+               fontSize="8.0" fontStyle="Regular" width="25.0" height="15.0"
+               parentComponent="Drum Panel"/>
+    <Component type="ScriptSlider" id="Perc2PanKnb" x="834.0" y="91.0" middlePosition="0.0"
+               stepSize="1.0" min="-100.0" max="100.0" suffix="L" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               processorId="Simple Gain14" width="19.0" height="19.0" mode="Pan"
+               numStrips="101.0" scaleFactor="0.3499999940395355" parentComponent="Drum Panel"
+               showTextBox="0" scrollWheel="0" enableMidiLearn="0" parameterId="Balance"/>
+    <Component type="ScriptSlider" id="Perc2GainSld" x="838.0" y="30.0" middlePosition="-18.0"
+               stepSize="0.1000000014901161" min="-80.0" max="30.0" suffix=" dB"
+               filmstripImage="{PROJECT_FOLDER}GainSlider128.png" width="11.0"
+               mode="Decibel" numStrips="128.0" height="60.0" scaleFactor="0.5"
+               parentComponent="Drum Panel" showTextBox="0" scrollWheel="0"
+               enableMidiLearn="0" processorId="Simple Gain14" parameterId="Gain"/>
+    <Component type="ScriptLabel" id="Perc3Lab" x="894.0" y="17.0" text="P3"
+               fontSize="8.0" fontStyle="Regular" width="25.0" height="15.0"
+               parentComponent="Drum Panel"/>
+    <Component type="ScriptSlider" id="Perc3PanKnb" x="897.0" y="91.0" middlePosition="0.0"
+               stepSize="1.0" min="-100.0" max="100.0" suffix="L" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               processorId="Simple Gain15" width="19.0" height="19.0" mode="Pan"
+               numStrips="101.0" scaleFactor="0.3499999940395355" parentComponent="Drum Panel"
+               showTextBox="0" scrollWheel="0" enableMidiLearn="0" parameterId="Balance"/>
+    <Component type="ScriptSlider" id="Perc3GainSld" x="901.0" y="30.0" middlePosition="-18.0"
+               stepSize="0.1000000014901161" min="-80.0" max="30.0" suffix=" dB"
+               filmstripImage="{PROJECT_FOLDER}GainSlider128.png" width="11.0"
+               mode="Decibel" numStrips="128.0" height="60.0" scaleFactor="0.5"
+               parentComponent="Drum Panel" showTextBox="0" scrollWheel="0"
+               enableMidiLearn="0" processorId="Simple Gain15" parameterId="Gain"/>
+    <Component type="ScriptLabel" id="Perc4Lab" x="957.0" y="17.0" text="P4"
+               fontSize="8.0" fontStyle="Regular" width="25.0" height="15.0"
+               parentComponent="Drum Panel"/>
+    <Component type="ScriptSlider" id="Perc4PanKnb" x="960.0" y="91.0" middlePosition="0.0"
+               stepSize="1.0" min="-100.0" max="100.0" suffix="L" filmstripImage="{PROJECT_FOLDER}panknob101-2.png"
+               processorId="Simple Gain16" width="19.0" height="19.0" mode="Pan"
+               numStrips="101.0" scaleFactor="0.3499999940395355" parentComponent="Drum Panel"
+               showTextBox="0" scrollWheel="0" enableMidiLearn="0" parameterId="Balance"/>
+    <Component type="ScriptSlider" id="Perc4GainSld" x="964.0" y="30.0" middlePosition="-18.0"
+               stepSize="0.1000000014901161" min="-80.0" max="30.0" suffix=" dB"
+               filmstripImage="{PROJECT_FOLDER}GainSlider128.png" width="11.0"
+               mode="Decibel" numStrips="128.0" height="60.0" scaleFactor="0.5"
+               parentComponent="Drum Panel" showTextBox="0" scrollWheel="0"
+               enableMidiLearn="0" processorId="Simple Gain16" parameterId="Gain"/>
+    <Component type="ScriptComboBox" id="KickCombo" x="32.0" y="11.0" max="180"
+               width="30.0" bgColour="11382189" itemColour="0" items="808 01&#10;808 02&#10;808 03&#10;808 04&#10;808 05&#10;808 06&#10;808 07&#10;808 08&#10;808 09&#10;808 10&#10;CR 01&#10;CR 02&#10;CR 03&#10;CR 04&#10;CR 05&#10;CR 06&#10;CR 07&#10;CR 08&#10;CR 09&#10;CR 10&#10;Clap 01&#10;Clap 02&#10;Clap 03&#10;Clap 04&#10;Clap 05&#10;Clap 06&#10;Clap 07&#10;Clap 08&#10;Clap 09&#10;Clap 10&#10;Clap 11&#10;Clap 12&#10;Clap 13&#10;Clap 14&#10;Clap 15&#10;Clap 16&#10;Clap 17&#10;Clap 18&#10;Clap 19&#10;Clap 20&#10;Hat 01&#10;Hat 02&#10;Hat 03&#10;Hat 04&#10;Hat 05&#10;Hat 06&#10;Hat 07&#10;Hat 08&#10;Hat 09&#10;Hat 10&#10;Hat 11&#10;Hat 12&#10;Hat 13&#10;Hat 14&#10;Hat 15&#10;Hat 16&#10;Hat 17&#10;Hat 18&#10;Hat 19&#10;Hat 20&#10;Hat 21&#10;Hat 22&#10;Hat 23&#10;Hat 24&#10;Hat 25&#10;Hat 26&#10;Hat 27&#10;Hat 28&#10;Hat 29&#10;Hat 30&#10;Hat 31&#10;Hat 32&#10;Hat 33&#10;Hat 34&#10;Hat 35&#10;Hat 36&#10;Hat 37&#10;Hat 38&#10;Hat 39&#10;Hat 40&#10;Hat13&#10;Kick 01&#10;Kick 02&#10;Kick 03&#10;Kick 04&#10;Kick 05&#10;Kick 06&#10;Kick 07&#10;Kick 08&#10;Kick 09&#10;Kick 10&#10;OH 01&#10;OH 02&#10;OH 03&#10;OH 04&#10;OH 05&#10;OH 06&#10;OH 07&#10;OH 08&#10;OH 09&#10;OH 10&#10;OH 11&#10;OH 12&#10;OH 13&#10;OH 14&#10;OH 15&#10;OH 16&#10;OH 17&#10;OH 19&#10;OH 20&#10;P 01&#10;P 02&#10;P 03&#10;P 04&#10;P 05&#10;P 06&#10;P 07&#10;P 08&#10;P 09&#10;P 10&#10;P 11&#10;P 12&#10;P 13&#10;P 14&#10;P 15&#10;P 16&#10;P 17&#10;P 18&#10;P 19&#10;P 20&#10;P 21&#10;P 22&#10;P 23&#10;P 24&#10;P 25&#10;P 26&#10;P 27&#10;P 28&#10;P 29&#10;P 30&#10;P 31&#10;P 32&#10;P 33&#10;P 34&#10;P 35&#10;P 36&#10;P 37&#10;P 38&#10;P 39&#10;P 40&#10;SB 01&#10;SB 02&#10;SB 03&#10;SB 04&#10;SB 05&#10;SB 06&#10;SB 07&#10;SB 08&#10;SB 09&#10;SB 10&#10;Snare 01&#10;Snare 02&#10;Snare 03&#10;Snare 04&#10;Snare 05&#10;Snare 06&#10;Snare 07&#10;Snare 08&#10;Snare 09&#10;Snare 10&#10;Snare 11&#10;Snare 12&#10;Snare 13&#10;Snare 14&#10;Snare 15&#10;Snare 16&#10;Snare 17&#10;Snare 18&#10;Snare 19&#10;Snare 20"
+               itemColour2="1118481" parentComponent="Drum Panel" textColour="4290888129"/>
+    <Component type="ScriptComboBox" id="Snare1Combo" x="127.0" y="11.0" max="180"
+               width="28.0" bgColour="11382189" itemColour="0" items="808 01&#10;808 02&#10;808 03&#10;808 04&#10;808 05&#10;808 06&#10;808 07&#10;808 08&#10;808 09&#10;808 10&#10;CR 01&#10;CR 02&#10;CR 03&#10;CR 04&#10;CR 05&#10;CR 06&#10;CR 07&#10;CR 08&#10;CR 09&#10;CR 10&#10;Clap 01&#10;Clap 02&#10;Clap 03&#10;Clap 04&#10;Clap 05&#10;Clap 06&#10;Clap 07&#10;Clap 08&#10;Clap 09&#10;Clap 10&#10;Clap 11&#10;Clap 12&#10;Clap 13&#10;Clap 14&#10;Clap 15&#10;Clap 16&#10;Clap 17&#10;Clap 18&#10;Clap 19&#10;Clap 20&#10;Hat 01&#10;Hat 02&#10;Hat 03&#10;Hat 04&#10;Hat 05&#10;Hat 06&#10;Hat 07&#10;Hat 08&#10;Hat 09&#10;Hat 10&#10;Hat 11&#10;Hat 12&#10;Hat 13&#10;Hat 14&#10;Hat 15&#10;Hat 16&#10;Hat 17&#10;Hat 18&#10;Hat 19&#10;Hat 20&#10;Hat 21&#10;Hat 22&#10;Hat 23&#10;Hat 24&#10;Hat 25&#10;Hat 26&#10;Hat 27&#10;Hat 28&#10;Hat 29&#10;Hat 30&#10;Hat 31&#10;Hat 32&#10;Hat 33&#10;Hat 34&#10;Hat 35&#10;Hat 36&#10;Hat 37&#10;Hat 38&#10;Hat 39&#10;Hat 40&#10;Hat13&#10;Kick 01&#10;Kick 02&#10;Kick 03&#10;Kick 04&#10;Kick 05&#10;Kick 06&#10;Kick 07&#10;Kick 08&#10;Kick 09&#10;Kick 10&#10;OH 01&#10;OH 02&#10;OH 03&#10;OH 04&#10;OH 05&#10;OH 06&#10;OH 07&#10;OH 08&#10;OH 09&#10;OH 10&#10;OH 11&#10;OH 12&#10;OH 13&#10;OH 14&#10;OH 15&#10;OH 16&#10;OH 17&#10;OH 19&#10;OH 20&#10;P 01&#10;P 02&#10;P 03&#10;P 04&#10;P 05&#10;P 06&#10;P 07&#10;P 08&#10;P 09&#10;P 10&#10;P 11&#10;P 12&#10;P 13&#10;P 14&#10;P 15&#10;P 16&#10;P 17&#10;P 18&#10;P 19&#10;P 20&#10;P 21&#10;P 22&#10;P 23&#10;P 24&#10;P 25&#10;P 26&#10;P 27&#10;P 28&#10;P 29&#10;P 30&#10;P 31&#10;P 32&#10;P 33&#10;P 34&#10;P 35&#10;P 36&#10;P 37&#10;P 38&#10;P 39&#10;P 40&#10;SB 01&#10;SB 02&#10;SB 03&#10;SB 04&#10;SB 05&#10;SB 06&#10;SB 07&#10;SB 08&#10;SB 09&#10;SB 10&#10;Snare 01&#10;Snare 02&#10;Snare 03&#10;Snare 04&#10;Snare 05&#10;Snare 06&#10;Snare 07&#10;Snare 08&#10;Snare 09&#10;Snare 10&#10;Snare 11&#10;Snare 12&#10;Snare 13&#10;Snare 14&#10;Snare 15&#10;Snare 16&#10;Snare 17&#10;Snare 18&#10;Snare 19&#10;Snare 20"
+               height="30.0" itemColour2="1118481" parentComponent="Drum Panel"
+               textColour="4290888129"/>
+    <Component type="ScriptComboBox" id="Snare2Combo" x="189.0" y="11.0" max="180"
+               width="28.0" bgColour="11382189" itemColour="0" items="808 01&#10;808 02&#10;808 03&#10;808 04&#10;808 05&#10;808 06&#10;808 07&#10;808 08&#10;808 09&#10;808 10&#10;CR 01&#10;CR 02&#10;CR 03&#10;CR 04&#10;CR 05&#10;CR 06&#10;CR 07&#10;CR 08&#10;CR 09&#10;CR 10&#10;Clap 01&#10;Clap 02&#10;Clap 03&#10;Clap 04&#10;Clap 05&#10;Clap 06&#10;Clap 07&#10;Clap 08&#10;Clap 09&#10;Clap 10&#10;Clap 11&#10;Clap 12&#10;Clap 13&#10;Clap 14&#10;Clap 15&#10;Clap 16&#10;Clap 17&#10;Clap 18&#10;Clap 19&#10;Clap 20&#10;Hat 01&#10;Hat 02&#10;Hat 03&#10;Hat 04&#10;Hat 05&#10;Hat 06&#10;Hat 07&#10;Hat 08&#10;Hat 09&#10;Hat 10&#10;Hat 11&#10;Hat 12&#10;Hat 13&#10;Hat 14&#10;Hat 15&#10;Hat 16&#10;Hat 17&#10;Hat 18&#10;Hat 19&#10;Hat 20&#10;Hat 21&#10;Hat 22&#10;Hat 23&#10;Hat 24&#10;Hat 25&#10;Hat 26&#10;Hat 27&#10;Hat 28&#10;Hat 29&#10;Hat 30&#10;Hat 31&#10;Hat 32&#10;Hat 33&#10;Hat 34&#10;Hat 35&#10;Hat 36&#10;Hat 37&#10;Hat 38&#10;Hat 39&#10;Hat 40&#10;Hat13&#10;Kick 01&#10;Kick 02&#10;Kick 03&#10;Kick 04&#10;Kick 05&#10;Kick 06&#10;Kick 07&#10;Kick 08&#10;Kick 09&#10;Kick 10&#10;OH 01&#10;OH 02&#10;OH 03&#10;OH 04&#10;OH 05&#10;OH 06&#10;OH 07&#10;OH 08&#10;OH 09&#10;OH 10&#10;OH 11&#10;OH 12&#10;OH 13&#10;OH 14&#10;OH 15&#10;OH 16&#10;OH 17&#10;OH 19&#10;OH 20&#10;P 01&#10;P 02&#10;P 03&#10;P 04&#10;P 05&#10;P 06&#10;P 07&#10;P 08&#10;P 09&#10;P 10&#10;P 11&#10;P 12&#10;P 13&#10;P 14&#10;P 15&#10;P 16&#10;P 17&#10;P 18&#10;P 19&#10;P 20&#10;P 21&#10;P 22&#10;P 23&#10;P 24&#10;P 25&#10;P 26&#10;P 27&#10;P 28&#10;P 29&#10;P 30&#10;P 31&#10;P 32&#10;P 33&#10;P 34&#10;P 35&#10;P 36&#10;P 37&#10;P 38&#10;P 39&#10;P 40&#10;SB 01&#10;SB 02&#10;SB 03&#10;SB 04&#10;SB 05&#10;SB 06&#10;SB 07&#10;SB 08&#10;SB 09&#10;SB 10&#10;Snare 01&#10;Snare 02&#10;Snare 03&#10;Snare 04&#10;Snare 05&#10;Snare 06&#10;Snare 07&#10;Snare 08&#10;Snare 09&#10;Snare 10&#10;Snare 11&#10;Snare 12&#10;Snare 13&#10;Snare 14&#10;Snare 15&#10;Snare 16&#10;Snare 17&#10;Snare 18&#10;Snare 19&#10;Snare 20"
+               itemColour2="1118481" parentComponent="Drum Panel" textColour="4290888129"/>
+    <Component type="ScriptComboBox" id="Perc1Combo" x="749.0" y="11.0" max="180"
+               width="30.0" bgColour="11382189" itemColour="0" items="808 01&#10;808 02&#10;808 03&#10;808 04&#10;808 05&#10;808 06&#10;808 07&#10;808 08&#10;808 09&#10;808 10&#10;CR 01&#10;CR 02&#10;CR 03&#10;CR 04&#10;CR 05&#10;CR 06&#10;CR 07&#10;CR 08&#10;CR 09&#10;CR 10&#10;Clap 01&#10;Clap 02&#10;Clap 03&#10;Clap 04&#10;Clap 05&#10;Clap 06&#10;Clap 07&#10;Clap 08&#10;Clap 09&#10;Clap 10&#10;Clap 11&#10;Clap 12&#10;Clap 13&#10;Clap 14&#10;Clap 15&#10;Clap 16&#10;Clap 17&#10;Clap 18&#10;Clap 19&#10;Clap 20&#10;Hat 01&#10;Hat 02&#10;Hat 03&#10;Hat 04&#10;Hat 05&#10;Hat 06&#10;Hat 07&#10;Hat 08&#10;Hat 09&#10;Hat 10&#10;Hat 11&#10;Hat 12&#10;Hat 13&#10;Hat 14&#10;Hat 15&#10;Hat 16&#10;Hat 17&#10;Hat 18&#10;Hat 19&#10;Hat 20&#10;Hat 21&#10;Hat 22&#10;Hat 23&#10;Hat 24&#10;Hat 25&#10;Hat 26&#10;Hat 27&#10;Hat 28&#10;Hat 29&#10;Hat 30&#10;Hat 31&#10;Hat 32&#10;Hat 33&#10;Hat 34&#10;Hat 35&#10;Hat 36&#10;Hat 37&#10;Hat 38&#10;Hat 39&#10;Hat 40&#10;Hat13&#10;Kick 01&#10;Kick 02&#10;Kick 03&#10;Kick 04&#10;Kick 05&#10;Kick 06&#10;Kick 07&#10;Kick 08&#10;Kick 09&#10;Kick 10&#10;OH 01&#10;OH 02&#10;OH 03&#10;OH 04&#10;OH 05&#10;OH 06&#10;OH 07&#10;OH 08&#10;OH 09&#10;OH 10&#10;OH 11&#10;OH 12&#10;OH 13&#10;OH 14&#10;OH 15&#10;OH 16&#10;OH 17&#10;OH 19&#10;OH 20&#10;P 01&#10;P 02&#10;P 03&#10;P 04&#10;P 05&#10;P 06&#10;P 07&#10;P 08&#10;P 09&#10;P 10&#10;P 11&#10;P 12&#10;P 13&#10;P 14&#10;P 15&#10;P 16&#10;P 17&#10;P 18&#10;P 19&#10;P 20&#10;P 21&#10;P 22&#10;P 23&#10;P 24&#10;P 25&#10;P 26&#10;P 27&#10;P 28&#10;P 29&#10;P 30&#10;P 31&#10;P 32&#10;P 33&#10;P 34&#10;P 35&#10;P 36&#10;P 37&#10;P 38&#10;P 39&#10;P 40&#10;SB 01&#10;SB 02&#10;SB 03&#10;SB 04&#10;SB 05&#10;SB 06&#10;SB 07&#10;SB 08&#10;SB 09&#10;SB 10&#10;Snare 01&#10;Snare 02&#10;Snare 03&#10;Snare 04&#10;Snare 05&#10;Snare 06&#10;Snare 07&#10;Snare 08&#10;Snare 09&#10;Snare 10&#10;Snare 11&#10;Snare 12&#10;Snare 13&#10;Snare 14&#10;Snare 15&#10;Snare 16&#10;Snare 17&#10;Snare 18&#10;Snare 19&#10;Snare 20"
+               itemColour2="1118481" parentComponent="Drum Panel" textColour="4290888129"/>
+    <Component type="ScriptComboBox" id="Perc2Combo" x="812.0" y="11.0" max="180"
+               width="30.0" bgColour="11382189" itemColour="0" items="808 01&#10;808 02&#10;808 03&#10;808 04&#10;808 05&#10;808 06&#10;808 07&#10;808 08&#10;808 09&#10;808 10&#10;CR 01&#10;CR 02&#10;CR 03&#10;CR 04&#10;CR 05&#10;CR 06&#10;CR 07&#10;CR 08&#10;CR 09&#10;CR 10&#10;Clap 01&#10;Clap 02&#10;Clap 03&#10;Clap 04&#10;Clap 05&#10;Clap 06&#10;Clap 07&#10;Clap 08&#10;Clap 09&#10;Clap 10&#10;Clap 11&#10;Clap 12&#10;Clap 13&#10;Clap 14&#10;Clap 15&#10;Clap 16&#10;Clap 17&#10;Clap 18&#10;Clap 19&#10;Clap 20&#10;Hat 01&#10;Hat 02&#10;Hat 03&#10;Hat 04&#10;Hat 05&#10;Hat 06&#10;Hat 07&#10;Hat 08&#10;Hat 09&#10;Hat 10&#10;Hat 11&#10;Hat 12&#10;Hat 13&#10;Hat 14&#10;Hat 15&#10;Hat 16&#10;Hat 17&#10;Hat 18&#10;Hat 19&#10;Hat 20&#10;Hat 21&#10;Hat 22&#10;Hat 23&#10;Hat 24&#10;Hat 25&#10;Hat 26&#10;Hat 27&#10;Hat 28&#10;Hat 29&#10;Hat 30&#10;Hat 31&#10;Hat 32&#10;Hat 33&#10;Hat 34&#10;Hat 35&#10;Hat 36&#10;Hat 37&#10;Hat 38&#10;Hat 39&#10;Hat 40&#10;Hat13&#10;Kick 01&#10;Kick 02&#10;Kick 03&#10;Kick 04&#10;Kick 05&#10;Kick 06&#10;Kick 07&#10;Kick 08&#10;Kick 09&#10;Kick 10&#10;OH 01&#10;OH 02&#10;OH 03&#10;OH 04&#10;OH 05&#10;OH 06&#10;OH 07&#10;OH 08&#10;OH 09&#10;OH 10&#10;OH 11&#10;OH 12&#10;OH 13&#10;OH 14&#10;OH 15&#10;OH 16&#10;OH 17&#10;OH 19&#10;OH 20&#10;P 01&#10;P 02&#10;P 03&#10;P 04&#10;P 05&#10;P 06&#10;P 07&#10;P 08&#10;P 09&#10;P 10&#10;P 11&#10;P 12&#10;P 13&#10;P 14&#10;P 15&#10;P 16&#10;P 17&#10;P 18&#10;P 19&#10;P 20&#10;P 21&#10;P 22&#10;P 23&#10;P 24&#10;P 25&#10;P 26&#10;P 27&#10;P 28&#10;P 29&#10;P 30&#10;P 31&#10;P 32&#10;P 33&#10;P 34&#10;P 35&#10;P 36&#10;P 37&#10;P 38&#10;P 39&#10;P 40&#10;SB 01&#10;SB 02&#10;SB 03&#10;SB 04&#10;SB 05&#10;SB 06&#10;SB 07&#10;SB 08&#10;SB 09&#10;SB 10&#10;Snare 01&#10;Snare 02&#10;Snare 03&#10;Snare 04&#10;Snare 05&#10;Snare 06&#10;Snare 07&#10;Snare 08&#10;Snare 09&#10;Snare 10&#10;Snare 11&#10;Snare 12&#10;Snare 13&#10;Snare 14&#10;Snare 15&#10;Snare 16&#10;Snare 17&#10;Snare 18&#10;Snare 19&#10;Snare 20"
+               itemColour2="1118481" parentComponent="Drum Panel" textColour="4290888129"/>
+    <Component type="ScriptComboBox" id="Perc3Combo" x="875.0" y="11.0" max="180"
+               width="30.0" bgColour="11382189" itemColour="0" items="808 01&#10;808 02&#10;808 03&#10;808 04&#10;808 05&#10;808 06&#10;808 07&#10;808 08&#10;808 09&#10;808 10&#10;CR 01&#10;CR 02&#10;CR 03&#10;CR 04&#10;CR 05&#10;CR 06&#10;CR 07&#10;CR 08&#10;CR 09&#10;CR 10&#10;Clap 01&#10;Clap 02&#10;Clap 03&#10;Clap 04&#10;Clap 05&#10;Clap 06&#10;Clap 07&#10;Clap 08&#10;Clap 09&#10;Clap 10&#10;Clap 11&#10;Clap 12&#10;Clap 13&#10;Clap 14&#10;Clap 15&#10;Clap 16&#10;Clap 17&#10;Clap 18&#10;Clap 19&#10;Clap 20&#10;Hat 01&#10;Hat 02&#10;Hat 03&#10;Hat 04&#10;Hat 05&#10;Hat 06&#10;Hat 07&#10;Hat 08&#10;Hat 09&#10;Hat 10&#10;Hat 11&#10;Hat 12&#10;Hat 13&#10;Hat 14&#10;Hat 15&#10;Hat 16&#10;Hat 17&#10;Hat 18&#10;Hat 19&#10;Hat 20&#10;Hat 21&#10;Hat 22&#10;Hat 23&#10;Hat 24&#10;Hat 25&#10;Hat 26&#10;Hat 27&#10;Hat 28&#10;Hat 29&#10;Hat 30&#10;Hat 31&#10;Hat 32&#10;Hat 33&#10;Hat 34&#10;Hat 35&#10;Hat 36&#10;Hat 37&#10;Hat 38&#10;Hat 39&#10;Hat 40&#10;Hat13&#10;Kick 01&#10;Kick 02&#10;Kick 03&#10;Kick 04&#10;Kick 05&#10;Kick 06&#10;Kick 07&#10;Kick 08&#10;Kick 09&#10;Kick 10&#10;OH 01&#10;OH 02&#10;OH 03&#10;OH 04&#10;OH 05&#10;OH 06&#10;OH 07&#10;OH 08&#10;OH 09&#10;OH 10&#10;OH 11&#10;OH 12&#10;OH 13&#10;OH 14&#10;OH 15&#10;OH 16&#10;OH 17&#10;OH 19&#10;OH 20&#10;P 01&#10;P 02&#10;P 03&#10;P 04&#10;P 05&#10;P 06&#10;P 07&#10;P 08&#10;P 09&#10;P 10&#10;P 11&#10;P 12&#10;P 13&#10;P 14&#10;P 15&#10;P 16&#10;P 17&#10;P 18&#10;P 19&#10;P 20&#10;P 21&#10;P 22&#10;P 23&#10;P 24&#10;P 25&#10;P 26&#10;P 27&#10;P 28&#10;P 29&#10;P 30&#10;P 31&#10;P 32&#10;P 33&#10;P 34&#10;P 35&#10;P 36&#10;P 37&#10;P 38&#10;P 39&#10;P 40&#10;SB 01&#10;SB 02&#10;SB 03&#10;SB 04&#10;SB 05&#10;SB 06&#10;SB 07&#10;SB 08&#10;SB 09&#10;SB 10&#10;Snare 01&#10;Snare 02&#10;Snare 03&#10;Snare 04&#10;Snare 05&#10;Snare 06&#10;Snare 07&#10;Snare 08&#10;Snare 09&#10;Snare 10&#10;Snare 11&#10;Snare 12&#10;Snare 13&#10;Snare 14&#10;Snare 15&#10;Snare 16&#10;Snare 17&#10;Snare 18&#10;Snare 19&#10;Snare 20"
+               itemColour2="1118481" parentComponent="Drum Panel" textColour="4290888129"/>
+    <Component type="ScriptComboBox" id="Perc4Combo" x="938.0" y="11.0" max="180"
+               width="30.0" bgColour="11382189" itemColour="0" items="808 01&#10;808 02&#10;808 03&#10;808 04&#10;808 05&#10;808 06&#10;808 07&#10;808 08&#10;808 09&#10;808 10&#10;CR 01&#10;CR 02&#10;CR 03&#10;CR 04&#10;CR 05&#10;CR 06&#10;CR 07&#10;CR 08&#10;CR 09&#10;CR 10&#10;Clap 01&#10;Clap 02&#10;Clap 03&#10;Clap 04&#10;Clap 05&#10;Clap 06&#10;Clap 07&#10;Clap 08&#10;Clap 09&#10;Clap 10&#10;Clap 11&#10;Clap 12&#10;Clap 13&#10;Clap 14&#10;Clap 15&#10;Clap 16&#10;Clap 17&#10;Clap 18&#10;Clap 19&#10;Clap 20&#10;Hat 01&#10;Hat 02&#10;Hat 03&#10;Hat 04&#10;Hat 05&#10;Hat 06&#10;Hat 07&#10;Hat 08&#10;Hat 09&#10;Hat 10&#10;Hat 11&#10;Hat 12&#10;Hat 13&#10;Hat 14&#10;Hat 15&#10;Hat 16&#10;Hat 17&#10;Hat 18&#10;Hat 19&#10;Hat 20&#10;Hat 21&#10;Hat 22&#10;Hat 23&#10;Hat 24&#10;Hat 25&#10;Hat 26&#10;Hat 27&#10;Hat 28&#10;Hat 29&#10;Hat 30&#10;Hat 31&#10;Hat 32&#10;Hat 33&#10;Hat 34&#10;Hat 35&#10;Hat 36&#10;Hat 37&#10;Hat 38&#10;Hat 39&#10;Hat 40&#10;Hat13&#10;Kick 01&#10;Kick 02&#10;Kick 03&#10;Kick 04&#10;Kick 05&#10;Kick 06&#10;Kick 07&#10;Kick 08&#10;Kick 09&#10;Kick 10&#10;OH 01&#10;OH 02&#10;OH 03&#10;OH 04&#10;OH 05&#10;OH 06&#10;OH 07&#10;OH 08&#10;OH 09&#10;OH 10&#10;OH 11&#10;OH 12&#10;OH 13&#10;OH 14&#10;OH 15&#10;OH 16&#10;OH 17&#10;OH 19&#10;OH 20&#10;P 01&#10;P 02&#10;P 03&#10;P 04&#10;P 05&#10;P 06&#10;P 07&#10;P 08&#10;P 09&#10;P 10&#10;P 11&#10;P 12&#10;P 13&#10;P 14&#10;P 15&#10;P 16&#10;P 17&#10;P 18&#10;P 19&#10;P 20&#10;P 21&#10;P 22&#10;P 23&#10;P 24&#10;P 25&#10;P 26&#10;P 27&#10;P 28&#10;P 29&#10;P 30&#10;P 31&#10;P 32&#10;P 33&#10;P 34&#10;P 35&#10;P 36&#10;P 37&#10;P 38&#10;P 39&#10;P 40&#10;SB 01&#10;SB 02&#10;SB 03&#10;SB 04&#10;SB 05&#10;SB 06&#10;SB 07&#10;SB 08&#10;SB 09&#10;SB 10&#10;Snare 01&#10;Snare 02&#10;Snare 03&#10;Snare 04&#10;Snare 05&#10;Snare 06&#10;Snare 07&#10;Snare 08&#10;Snare 09&#10;Snare 10&#10;Snare 11&#10;Snare 12&#10;Snare 13&#10;Snare 14&#10;Snare 15&#10;Snare 16&#10;Snare 17&#10;Snare 18&#10;Snare 19&#10;Snare 20"
+               itemColour2="1118481" parentComponent="Drum Panel" textColour="4290888129"/>
+    <Component type="ScriptComboBox" id="ClapCombo1" x="249.0" y="11.0" max="180"
+               items="808 01&#10;808 02&#10;808 03&#10;808 04&#10;808 05&#10;808 06&#10;808 07&#10;808 08&#10;808 09&#10;808 10&#10;CR 01&#10;CR 02&#10;CR 03&#10;CR 04&#10;CR 05&#10;CR 06&#10;CR 07&#10;CR 08&#10;CR 09&#10;CR 10&#10;Clap 01&#10;Clap 02&#10;Clap 03&#10;Clap 04&#10;Clap 05&#10;Clap 06&#10;Clap 07&#10;Clap 08&#10;Clap 09&#10;Clap 10&#10;Clap 11&#10;Clap 12&#10;Clap 13&#10;Clap 14&#10;Clap 15&#10;Clap 16&#10;Clap 17&#10;Clap 18&#10;Clap 19&#10;Clap 20&#10;Hat 01&#10;Hat 02&#10;Hat 03&#10;Hat 04&#10;Hat 05&#10;Hat 06&#10;Hat 07&#10;Hat 08&#10;Hat 09&#10;Hat 10&#10;Hat 11&#10;Hat 12&#10;Hat 13&#10;Hat 14&#10;Hat 15&#10;Hat 16&#10;Hat 17&#10;Hat 18&#10;Hat 19&#10;Hat 20&#10;Hat 21&#10;Hat 22&#10;Hat 23&#10;Hat 24&#10;Hat 25&#10;Hat 26&#10;Hat 27&#10;Hat 28&#10;Hat 29&#10;Hat 30&#10;Hat 31&#10;Hat 32&#10;Hat 33&#10;Hat 34&#10;Hat 35&#10;Hat 36&#10;Hat 37&#10;Hat 38&#10;Hat 39&#10;Hat 40&#10;Hat13&#10;Kick 01&#10;Kick 02&#10;Kick 03&#10;Kick 04&#10;Kick 05&#10;Kick 06&#10;Kick 07&#10;Kick 08&#10;Kick 09&#10;Kick 10&#10;OH 01&#10;OH 02&#10;OH 03&#10;OH 04&#10;OH 05&#10;OH 06&#10;OH 07&#10;OH 08&#10;OH 09&#10;OH 10&#10;OH 11&#10;OH 12&#10;OH 13&#10;OH 14&#10;OH 15&#10;OH 16&#10;OH 17&#10;OH 19&#10;OH 20&#10;P 01&#10;P 02&#10;P 03&#10;P 04&#10;P 05&#10;P 06&#10;P 07&#10;P 08&#10;P 09&#10;P 10&#10;P 11&#10;P 12&#10;P 13&#10;P 14&#10;P 15&#10;P 16&#10;P 17&#10;P 18&#10;P 19&#10;P 20&#10;P 21&#10;P 22&#10;P 23&#10;P 24&#10;P 25&#10;P 26&#10;P 27&#10;P 28&#10;P 29&#10;P 30&#10;P 31&#10;P 32&#10;P 33&#10;P 34&#10;P 35&#10;P 36&#10;P 37&#10;P 38&#10;P 39&#10;P 40&#10;SB 01&#10;SB 02&#10;SB 03&#10;SB 04&#10;SB 05&#10;SB 06&#10;SB 07&#10;SB 08&#10;SB 09&#10;SB 10&#10;Snare 01&#10;Snare 02&#10;Snare 03&#10;Snare 04&#10;Snare 05&#10;Snare 06&#10;Snare 07&#10;Snare 08&#10;Snare 09&#10;Snare 10&#10;Snare 11&#10;Snare 12&#10;Snare 13&#10;Snare 14&#10;Snare 15&#10;Snare 16&#10;Snare 17&#10;Snare 18&#10;Snare 19&#10;Snare 20"
+               itemColour="0" width="30.0" bgColour="11382189" itemColour2="1118481"
+               parentComponent="Drum Panel" textColour="4290888129"/>
+    <Component type="ScriptComboBox" id="ClapCombo2" x="311.0" y="11.0" max="180"
+               items="808 01&#10;808 02&#10;808 03&#10;808 04&#10;808 05&#10;808 06&#10;808 07&#10;808 08&#10;808 09&#10;808 10&#10;CR 01&#10;CR 02&#10;CR 03&#10;CR 04&#10;CR 05&#10;CR 06&#10;CR 07&#10;CR 08&#10;CR 09&#10;CR 10&#10;Clap 01&#10;Clap 02&#10;Clap 03&#10;Clap 04&#10;Clap 05&#10;Clap 06&#10;Clap 07&#10;Clap 08&#10;Clap 09&#10;Clap 10&#10;Clap 11&#10;Clap 12&#10;Clap 13&#10;Clap 14&#10;Clap 15&#10;Clap 16&#10;Clap 17&#10;Clap 18&#10;Clap 19&#10;Clap 20&#10;Hat 01&#10;Hat 02&#10;Hat 03&#10;Hat 04&#10;Hat 05&#10;Hat 06&#10;Hat 07&#10;Hat 08&#10;Hat 09&#10;Hat 10&#10;Hat 11&#10;Hat 12&#10;Hat 13&#10;Hat 14&#10;Hat 15&#10;Hat 16&#10;Hat 17&#10;Hat 18&#10;Hat 19&#10;Hat 20&#10;Hat 21&#10;Hat 22&#10;Hat 23&#10;Hat 24&#10;Hat 25&#10;Hat 26&#10;Hat 27&#10;Hat 28&#10;Hat 29&#10;Hat 30&#10;Hat 31&#10;Hat 32&#10;Hat 33&#10;Hat 34&#10;Hat 35&#10;Hat 36&#10;Hat 37&#10;Hat 38&#10;Hat 39&#10;Hat 40&#10;Hat13&#10;Kick 01&#10;Kick 02&#10;Kick 03&#10;Kick 04&#10;Kick 05&#10;Kick 06&#10;Kick 07&#10;Kick 08&#10;Kick 09&#10;Kick 10&#10;OH 01&#10;OH 02&#10;OH 03&#10;OH 04&#10;OH 05&#10;OH 06&#10;OH 07&#10;OH 08&#10;OH 09&#10;OH 10&#10;OH 11&#10;OH 12&#10;OH 13&#10;OH 14&#10;OH 15&#10;OH 16&#10;OH 17&#10;OH 19&#10;OH 20&#10;P 01&#10;P 02&#10;P 03&#10;P 04&#10;P 05&#10;P 06&#10;P 07&#10;P 08&#10;P 09&#10;P 10&#10;P 11&#10;P 12&#10;P 13&#10;P 14&#10;P 15&#10;P 16&#10;P 17&#10;P 18&#10;P 19&#10;P 20&#10;P 21&#10;P 22&#10;P 23&#10;P 24&#10;P 25&#10;P 26&#10;P 27&#10;P 28&#10;P 29&#10;P 30&#10;P 31&#10;P 32&#10;P 33&#10;P 34&#10;P 35&#10;P 36&#10;P 37&#10;P 38&#10;P 39&#10;P 40&#10;SB 01&#10;SB 02&#10;SB 03&#10;SB 04&#10;SB 05&#10;SB 06&#10;SB 07&#10;SB 08&#10;SB 09&#10;SB 10&#10;Snare 01&#10;Snare 02&#10;Snare 03&#10;Snare 04&#10;Snare 05&#10;Snare 06&#10;Snare 07&#10;Snare 08&#10;Snare 09&#10;Snare 10&#10;Snare 11&#10;Snare 12&#10;Snare 13&#10;Snare 14&#10;Snare 15&#10;Snare 16&#10;Snare 17&#10;Snare 18&#10;Snare 19&#10;Snare 20"
+               itemColour="0" width="30.0" bgColour="11382189" itemColour2="1118481"
+               parentComponent="Drum Panel" textColour="4290888129"/>
+    <Component type="ScriptComboBox" id="HatCombo1" x="376.0" y="11.0" max="180"
+               items="808 01&#10;808 02&#10;808 03&#10;808 04&#10;808 05&#10;808 06&#10;808 07&#10;808 08&#10;808 09&#10;808 10&#10;CR 01&#10;CR 02&#10;CR 03&#10;CR 04&#10;CR 05&#10;CR 06&#10;CR 07&#10;CR 08&#10;CR 09&#10;CR 10&#10;Clap 01&#10;Clap 02&#10;Clap 03&#10;Clap 04&#10;Clap 05&#10;Clap 06&#10;Clap 07&#10;Clap 08&#10;Clap 09&#10;Clap 10&#10;Clap 11&#10;Clap 12&#10;Clap 13&#10;Clap 14&#10;Clap 15&#10;Clap 16&#10;Clap 17&#10;Clap 18&#10;Clap 19&#10;Clap 20&#10;Hat 01&#10;Hat 02&#10;Hat 03&#10;Hat 04&#10;Hat 05&#10;Hat 06&#10;Hat 07&#10;Hat 08&#10;Hat 09&#10;Hat 10&#10;Hat 11&#10;Hat 12&#10;Hat 13&#10;Hat 14&#10;Hat 15&#10;Hat 16&#10;Hat 17&#10;Hat 18&#10;Hat 19&#10;Hat 20&#10;Hat 21&#10;Hat 22&#10;Hat 23&#10;Hat 24&#10;Hat 25&#10;Hat 26&#10;Hat 27&#10;Hat 28&#10;Hat 29&#10;Hat 30&#10;Hat 31&#10;Hat 32&#10;Hat 33&#10;Hat 34&#10;Hat 35&#10;Hat 36&#10;Hat 37&#10;Hat 38&#10;Hat 39&#10;Hat 40&#10;Hat13&#10;Kick 01&#10;Kick 02&#10;Kick 03&#10;Kick 04&#10;Kick 05&#10;Kick 06&#10;Kick 07&#10;Kick 08&#10;Kick 09&#10;Kick 10&#10;OH 01&#10;OH 02&#10;OH 03&#10;OH 04&#10;OH 05&#10;OH 06&#10;OH 07&#10;OH 08&#10;OH 09&#10;OH 10&#10;OH 11&#10;OH 12&#10;OH 13&#10;OH 14&#10;OH 15&#10;OH 16&#10;OH 17&#10;OH 19&#10;OH 20&#10;P 01&#10;P 02&#10;P 03&#10;P 04&#10;P 05&#10;P 06&#10;P 07&#10;P 08&#10;P 09&#10;P 10&#10;P 11&#10;P 12&#10;P 13&#10;P 14&#10;P 15&#10;P 16&#10;P 17&#10;P 18&#10;P 19&#10;P 20&#10;P 21&#10;P 22&#10;P 23&#10;P 24&#10;P 25&#10;P 26&#10;P 27&#10;P 28&#10;P 29&#10;P 30&#10;P 31&#10;P 32&#10;P 33&#10;P 34&#10;P 35&#10;P 36&#10;P 37&#10;P 38&#10;P 39&#10;P 40&#10;SB 01&#10;SB 02&#10;SB 03&#10;SB 04&#10;SB 05&#10;SB 06&#10;SB 07&#10;SB 08&#10;SB 09&#10;SB 10&#10;Snare 01&#10;Snare 02&#10;Snare 03&#10;Snare 04&#10;Snare 05&#10;Snare 06&#10;Snare 07&#10;Snare 08&#10;Snare 09&#10;Snare 10&#10;Snare 11&#10;Snare 12&#10;Snare 13&#10;Snare 14&#10;Snare 15&#10;Snare 16&#10;Snare 17&#10;Snare 18&#10;Snare 19&#10;Snare 20"
+               itemColour="0" width="30.0" bgColour="11382189" itemColour2="1118481"
+               parentComponent="Drum Panel" textColour="4290888129"/>
+    <Component type="ScriptComboBox" id="HatCombo2" x="425.0" y="11.0" max="180"
+               items="808 01&#10;808 02&#10;808 03&#10;808 04&#10;808 05&#10;808 06&#10;808 07&#10;808 08&#10;808 09&#10;808 10&#10;CR 01&#10;CR 02&#10;CR 03&#10;CR 04&#10;CR 05&#10;CR 06&#10;CR 07&#10;CR 08&#10;CR 09&#10;CR 10&#10;Clap 01&#10;Clap 02&#10;Clap 03&#10;Clap 04&#10;Clap 05&#10;Clap 06&#10;Clap 07&#10;Clap 08&#10;Clap 09&#10;Clap 10&#10;Clap 11&#10;Clap 12&#10;Clap 13&#10;Clap 14&#10;Clap 15&#10;Clap 16&#10;Clap 17&#10;Clap 18&#10;Clap 19&#10;Clap 20&#10;Hat 01&#10;Hat 02&#10;Hat 03&#10;Hat 04&#10;Hat 05&#10;Hat 06&#10;Hat 07&#10;Hat 08&#10;Hat 09&#10;Hat 10&#10;Hat 11&#10;Hat 12&#10;Hat 13&#10;Hat 14&#10;Hat 15&#10;Hat 16&#10;Hat 17&#10;Hat 18&#10;Hat 19&#10;Hat 20&#10;Hat 21&#10;Hat 22&#10;Hat 23&#10;Hat 24&#10;Hat 25&#10;Hat 26&#10;Hat 27&#10;Hat 28&#10;Hat 29&#10;Hat 30&#10;Hat 31&#10;Hat 32&#10;Hat 33&#10;Hat 34&#10;Hat 35&#10;Hat 36&#10;Hat 37&#10;Hat 38&#10;Hat 39&#10;Hat 40&#10;Hat13&#10;Kick 01&#10;Kick 02&#10;Kick 03&#10;Kick 04&#10;Kick 05&#10;Kick 06&#10;Kick 07&#10;Kick 08&#10;Kick 09&#10;Kick 10&#10;OH 01&#10;OH 02&#10;OH 03&#10;OH 04&#10;OH 05&#10;OH 06&#10;OH 07&#10;OH 08&#10;OH 09&#10;OH 10&#10;OH 11&#10;OH 12&#10;OH 13&#10;OH 14&#10;OH 15&#10;OH 16&#10;OH 17&#10;OH 19&#10;OH 20&#10;P 01&#10;P 02&#10;P 03&#10;P 04&#10;P 05&#10;P 06&#10;P 07&#10;P 08&#10;P 09&#10;P 10&#10;P 11&#10;P 12&#10;P 13&#10;P 14&#10;P 15&#10;P 16&#10;P 17&#10;P 18&#10;P 19&#10;P 20&#10;P 21&#10;P 22&#10;P 23&#10;P 24&#10;P 25&#10;P 26&#10;P 27&#10;P 28&#10;P 29&#10;P 30&#10;P 31&#10;P 32&#10;P 33&#10;P 34&#10;P 35&#10;P 36&#10;P 37&#10;P 38&#10;P 39&#10;P 40&#10;SB 01&#10;SB 02&#10;SB 03&#10;SB 04&#10;SB 05&#10;SB 06&#10;SB 07&#10;SB 08&#10;SB 09&#10;SB 10&#10;Snare 01&#10;Snare 02&#10;Snare 03&#10;Snare 04&#10;Snare 05&#10;Snare 06&#10;Snare 07&#10;Snare 08&#10;Snare 09&#10;Snare 10&#10;Snare 11&#10;Snare 12&#10;Snare 13&#10;Snare 14&#10;Snare 15&#10;Snare 16&#10;Snare 17&#10;Snare 18&#10;Snare 19&#10;Snare 20"
+               itemColour="0" width="30.0" bgColour="11382189" itemColour2="1118481"
+               parentComponent="Drum Panel" textColour="4290888129"/>
+    <Component type="ScriptComboBox" id="HatCombo3" x="475.0" y="11.0" max="180"
+               items="808 01&#10;808 02&#10;808 03&#10;808 04&#10;808 05&#10;808 06&#10;808 07&#10;808 08&#10;808 09&#10;808 10&#10;CR 01&#10;CR 02&#10;CR 03&#10;CR 04&#10;CR 05&#10;CR 06&#10;CR 07&#10;CR 08&#10;CR 09&#10;CR 10&#10;Clap 01&#10;Clap 02&#10;Clap 03&#10;Clap 04&#10;Clap 05&#10;Clap 06&#10;Clap 07&#10;Clap 08&#10;Clap 09&#10;Clap 10&#10;Clap 11&#10;Clap 12&#10;Clap 13&#10;Clap 14&#10;Clap 15&#10;Clap 16&#10;Clap 17&#10;Clap 18&#10;Clap 19&#10;Clap 20&#10;Hat 01&#10;Hat 02&#10;Hat 03&#10;Hat 04&#10;Hat 05&#10;Hat 06&#10;Hat 07&#10;Hat 08&#10;Hat 09&#10;Hat 10&#10;Hat 11&#10;Hat 12&#10;Hat 13&#10;Hat 14&#10;Hat 15&#10;Hat 16&#10;Hat 17&#10;Hat 18&#10;Hat 19&#10;Hat 20&#10;Hat 21&#10;Hat 22&#10;Hat 23&#10;Hat 24&#10;Hat 25&#10;Hat 26&#10;Hat 27&#10;Hat 28&#10;Hat 29&#10;Hat 30&#10;Hat 31&#10;Hat 32&#10;Hat 33&#10;Hat 34&#10;Hat 35&#10;Hat 36&#10;Hat 37&#10;Hat 38&#10;Hat 39&#10;Hat 40&#10;Hat13&#10;Kick 01&#10;Kick 02&#10;Kick 03&#10;Kick 04&#10;Kick 05&#10;Kick 06&#10;Kick 07&#10;Kick 08&#10;Kick 09&#10;Kick 10&#10;OH 01&#10;OH 02&#10;OH 03&#10;OH 04&#10;OH 05&#10;OH 06&#10;OH 07&#10;OH 08&#10;OH 09&#10;OH 10&#10;OH 11&#10;OH 12&#10;OH 13&#10;OH 14&#10;OH 15&#10;OH 16&#10;OH 17&#10;OH 19&#10;OH 20&#10;P 01&#10;P 02&#10;P 03&#10;P 04&#10;P 05&#10;P 06&#10;P 07&#10;P 08&#10;P 09&#10;P 10&#10;P 11&#10;P 12&#10;P 13&#10;P 14&#10;P 15&#10;P 16&#10;P 17&#10;P 18&#10;P 19&#10;P 20&#10;P 21&#10;P 22&#10;P 23&#10;P 24&#10;P 25&#10;P 26&#10;P 27&#10;P 28&#10;P 29&#10;P 30&#10;P 31&#10;P 32&#10;P 33&#10;P 34&#10;P 35&#10;P 36&#10;P 37&#10;P 38&#10;P 39&#10;P 40&#10;SB 01&#10;SB 02&#10;SB 03&#10;SB 04&#10;SB 05&#10;SB 06&#10;SB 07&#10;SB 08&#10;SB 09&#10;SB 10&#10;Snare 01&#10;Snare 02&#10;Snare 03&#10;Snare 04&#10;Snare 05&#10;Snare 06&#10;Snare 07&#10;Snare 08&#10;Snare 09&#10;Snare 10&#10;Snare 11&#10;Snare 12&#10;Snare 13&#10;Snare 14&#10;Snare 15&#10;Snare 16&#10;Snare 17&#10;Snare 18&#10;Snare 19&#10;Snare 20"
+               itemColour="0" width="30.0" bgColour="11382189" itemColour2="1118481"
+               parentComponent="Drum Panel" textColour="4290888129"/>
+    <Component type="ScriptComboBox" id="HatCombo4" x="525.0" y="11.0" max="180"
+               items="808 01&#10;808 02&#10;808 03&#10;808 04&#10;808 05&#10;808 06&#10;808 07&#10;808 08&#10;808 09&#10;808 10&#10;CR 01&#10;CR 02&#10;CR 03&#10;CR 04&#10;CR 05&#10;CR 06&#10;CR 07&#10;CR 08&#10;CR 09&#10;CR 10&#10;Clap 01&#10;Clap 02&#10;Clap 03&#10;Clap 04&#10;Clap 05&#10;Clap 06&#10;Clap 07&#10;Clap 08&#10;Clap 09&#10;Clap 10&#10;Clap 11&#10;Clap 12&#10;Clap 13&#10;Clap 14&#10;Clap 15&#10;Clap 16&#10;Clap 17&#10;Clap 18&#10;Clap 19&#10;Clap 20&#10;Hat 01&#10;Hat 02&#10;Hat 03&#10;Hat 04&#10;Hat 05&#10;Hat 06&#10;Hat 07&#10;Hat 08&#10;Hat 09&#10;Hat 10&#10;Hat 11&#10;Hat 12&#10;Hat 13&#10;Hat 14&#10;Hat 15&#10;Hat 16&#10;Hat 17&#10;Hat 18&#10;Hat 19&#10;Hat 20&#10;Hat 21&#10;Hat 22&#10;Hat 23&#10;Hat 24&#10;Hat 25&#10;Hat 26&#10;Hat 27&#10;Hat 28&#10;Hat 29&#10;Hat 30&#10;Hat 31&#10;Hat 32&#10;Hat 33&#10;Hat 34&#10;Hat 35&#10;Hat 36&#10;Hat 37&#10;Hat 38&#10;Hat 39&#10;Hat 40&#10;Hat13&#10;Kick 01&#10;Kick 02&#10;Kick 03&#10;Kick 04&#10;Kick 05&#10;Kick 06&#10;Kick 07&#10;Kick 08&#10;Kick 09&#10;Kick 10&#10;OH 01&#10;OH 02&#10;OH 03&#10;OH 04&#10;OH 05&#10;OH 06&#10;OH 07&#10;OH 08&#10;OH 09&#10;OH 10&#10;OH 11&#10;OH 12&#10;OH 13&#10;OH 14&#10;OH 15&#10;OH 16&#10;OH 17&#10;OH 19&#10;OH 20&#10;P 01&#10;P 02&#10;P 03&#10;P 04&#10;P 05&#10;P 06&#10;P 07&#10;P 08&#10;P 09&#10;P 10&#10;P 11&#10;P 12&#10;P 13&#10;P 14&#10;P 15&#10;P 16&#10;P 17&#10;P 18&#10;P 19&#10;P 20&#10;P 21&#10;P 22&#10;P 23&#10;P 24&#10;P 25&#10;P 26&#10;P 27&#10;P 28&#10;P 29&#10;P 30&#10;P 31&#10;P 32&#10;P 33&#10;P 34&#10;P 35&#10;P 36&#10;P 37&#10;P 38&#10;P 39&#10;P 40&#10;SB 01&#10;SB 02&#10;SB 03&#10;SB 04&#10;SB 05&#10;SB 06&#10;SB 07&#10;SB 08&#10;SB 09&#10;SB 10&#10;Snare 01&#10;Snare 02&#10;Snare 03&#10;Snare 04&#10;Snare 05&#10;Snare 06&#10;Snare 07&#10;Snare 08&#10;Snare 09&#10;Snare 10&#10;Snare 11&#10;Snare 12&#10;Snare 13&#10;Snare 14&#10;Snare 15&#10;Snare 16&#10;Snare 17&#10;Snare 18&#10;Snare 19&#10;Snare 20"
+               itemColour="0" width="30.0" bgColour="11382189" itemColour2="1118481"
+               parentComponent="Drum Panel" textColour="4290888129"/>
+    <Component type="ScriptComboBox" id="CrashCombo1" x="686.0" y="11.0" max="180"
+               items="808 01&#10;808 02&#10;808 03&#10;808 04&#10;808 05&#10;808 06&#10;808 07&#10;808 08&#10;808 09&#10;808 10&#10;CR 01&#10;CR 02&#10;CR 03&#10;CR 04&#10;CR 05&#10;CR 06&#10;CR 07&#10;CR 08&#10;CR 09&#10;CR 10&#10;Clap 01&#10;Clap 02&#10;Clap 03&#10;Clap 04&#10;Clap 05&#10;Clap 06&#10;Clap 07&#10;Clap 08&#10;Clap 09&#10;Clap 10&#10;Clap 11&#10;Clap 12&#10;Clap 13&#10;Clap 14&#10;Clap 15&#10;Clap 16&#10;Clap 17&#10;Clap 18&#10;Clap 19&#10;Clap 20&#10;Hat 01&#10;Hat 02&#10;Hat 03&#10;Hat 04&#10;Hat 05&#10;Hat 06&#10;Hat 07&#10;Hat 08&#10;Hat 09&#10;Hat 10&#10;Hat 11&#10;Hat 12&#10;Hat 13&#10;Hat 14&#10;Hat 15&#10;Hat 16&#10;Hat 17&#10;Hat 18&#10;Hat 19&#10;Hat 20&#10;Hat 21&#10;Hat 22&#10;Hat 23&#10;Hat 24&#10;Hat 25&#10;Hat 26&#10;Hat 27&#10;Hat 28&#10;Hat 29&#10;Hat 30&#10;Hat 31&#10;Hat 32&#10;Hat 33&#10;Hat 34&#10;Hat 35&#10;Hat 36&#10;Hat 37&#10;Hat 38&#10;Hat 39&#10;Hat 40&#10;Hat13&#10;Kick 01&#10;Kick 02&#10;Kick 03&#10;Kick 04&#10;Kick 05&#10;Kick 06&#10;Kick 07&#10;Kick 08&#10;Kick 09&#10;Kick 10&#10;OH 01&#10;OH 02&#10;OH 03&#10;OH 04&#10;OH 05&#10;OH 06&#10;OH 07&#10;OH 08&#10;OH 09&#10;OH 10&#10;OH 11&#10;OH 12&#10;OH 13&#10;OH 14&#10;OH 15&#10;OH 16&#10;OH 17&#10;OH 19&#10;OH 20&#10;P 01&#10;P 02&#10;P 03&#10;P 04&#10;P 05&#10;P 06&#10;P 07&#10;P 08&#10;P 09&#10;P 10&#10;P 11&#10;P 12&#10;P 13&#10;P 14&#10;P 15&#10;P 16&#10;P 17&#10;P 18&#10;P 19&#10;P 20&#10;P 21&#10;P 22&#10;P 23&#10;P 24&#10;P 25&#10;P 26&#10;P 27&#10;P 28&#10;P 29&#10;P 30&#10;P 31&#10;P 32&#10;P 33&#10;P 34&#10;P 35&#10;P 36&#10;P 37&#10;P 38&#10;P 39&#10;P 40&#10;SB 01&#10;SB 02&#10;SB 03&#10;SB 04&#10;SB 05&#10;SB 06&#10;SB 07&#10;SB 08&#10;SB 09&#10;SB 10&#10;Snare 01&#10;Snare 02&#10;Snare 03&#10;Snare 04&#10;Snare 05&#10;Snare 06&#10;Snare 07&#10;Snare 08&#10;Snare 09&#10;Snare 10&#10;Snare 11&#10;Snare 12&#10;Snare 13&#10;Snare 14&#10;Snare 15&#10;Snare 16&#10;Snare 17&#10;Snare 18&#10;Snare 19&#10;Snare 20"
+               itemColour="0" width="30.0" bgColour="11382189" itemColour2="1118481"
+               parentComponent="Drum Panel" textColour="4290888129"/>
+    <Component type="ScriptComboBox" id="OHCombo1" x="572.0" y="11.0" max="180"
+               items="808 01&#10;808 02&#10;808 03&#10;808 04&#10;808 05&#10;808 06&#10;808 07&#10;808 08&#10;808 09&#10;808 10&#10;CR 01&#10;CR 02&#10;CR 03&#10;CR 04&#10;CR 05&#10;CR 06&#10;CR 07&#10;CR 08&#10;CR 09&#10;CR 10&#10;Clap 01&#10;Clap 02&#10;Clap 03&#10;Clap 04&#10;Clap 05&#10;Clap 06&#10;Clap 07&#10;Clap 08&#10;Clap 09&#10;Clap 10&#10;Clap 11&#10;Clap 12&#10;Clap 13&#10;Clap 14&#10;Clap 15&#10;Clap 16&#10;Clap 17&#10;Clap 18&#10;Clap 19&#10;Clap 20&#10;Hat 01&#10;Hat 02&#10;Hat 03&#10;Hat 04&#10;Hat 05&#10;Hat 06&#10;Hat 07&#10;Hat 08&#10;Hat 09&#10;Hat 10&#10;Hat 11&#10;Hat 12&#10;Hat 13&#10;Hat 14&#10;Hat 15&#10;Hat 16&#10;Hat 17&#10;Hat 18&#10;Hat 19&#10;Hat 20&#10;Hat 21&#10;Hat 22&#10;Hat 23&#10;Hat 24&#10;Hat 25&#10;Hat 26&#10;Hat 27&#10;Hat 28&#10;Hat 29&#10;Hat 30&#10;Hat 31&#10;Hat 32&#10;Hat 33&#10;Hat 34&#10;Hat 35&#10;Hat 36&#10;Hat 37&#10;Hat 38&#10;Hat 39&#10;Hat 40&#10;Hat13&#10;Kick 01&#10;Kick 02&#10;Kick 03&#10;Kick 04&#10;Kick 05&#10;Kick 06&#10;Kick 07&#10;Kick 08&#10;Kick 09&#10;Kick 10&#10;OH 01&#10;OH 02&#10;OH 03&#10;OH 04&#10;OH 05&#10;OH 06&#10;OH 07&#10;OH 08&#10;OH 09&#10;OH 10&#10;OH 11&#10;OH 12&#10;OH 13&#10;OH 14&#10;OH 15&#10;OH 16&#10;OH 17&#10;OH 19&#10;OH 20&#10;P 01&#10;P 02&#10;P 03&#10;P 04&#10;P 05&#10;P 06&#10;P 07&#10;P 08&#10;P 09&#10;P 10&#10;P 11&#10;P 12&#10;P 13&#10;P 14&#10;P 15&#10;P 16&#10;P 17&#10;P 18&#10;P 19&#10;P 20&#10;P 21&#10;P 22&#10;P 23&#10;P 24&#10;P 25&#10;P 26&#10;P 27&#10;P 28&#10;P 29&#10;P 30&#10;P 31&#10;P 32&#10;P 33&#10;P 34&#10;P 35&#10;P 36&#10;P 37&#10;P 38&#10;P 39&#10;P 40&#10;SB 01&#10;SB 02&#10;SB 03&#10;SB 04&#10;SB 05&#10;SB 06&#10;SB 07&#10;SB 08&#10;SB 09&#10;SB 10&#10;Snare 01&#10;Snare 02&#10;Snare 03&#10;Snare 04&#10;Snare 05&#10;Snare 06&#10;Snare 07&#10;Snare 08&#10;Snare 09&#10;Snare 10&#10;Snare 11&#10;Snare 12&#10;Snare 13&#10;Snare 14&#10;Snare 15&#10;Snare 16&#10;Snare 17&#10;Snare 18&#10;Snare 19&#10;Snare 20"
+               itemColour="0" width="30.0" bgColour="11382189" itemColour2="1118481"
+               parentComponent="Drum Panel" textColour="4290888129"/>
+    <Component type="ScriptComboBox" id="OHCombo2" x="621.0" y="11.0" max="180"
+               items="808 01&#10;808 02&#10;808 03&#10;808 04&#10;808 05&#10;808 06&#10;808 07&#10;808 08&#10;808 09&#10;808 10&#10;CR 01&#10;CR 02&#10;CR 03&#10;CR 04&#10;CR 05&#10;CR 06&#10;CR 07&#10;CR 08&#10;CR 09&#10;CR 10&#10;Clap 01&#10;Clap 02&#10;Clap 03&#10;Clap 04&#10;Clap 05&#10;Clap 06&#10;Clap 07&#10;Clap 08&#10;Clap 09&#10;Clap 10&#10;Clap 11&#10;Clap 12&#10;Clap 13&#10;Clap 14&#10;Clap 15&#10;Clap 16&#10;Clap 17&#10;Clap 18&#10;Clap 19&#10;Clap 20&#10;Hat 01&#10;Hat 02&#10;Hat 03&#10;Hat 04&#10;Hat 05&#10;Hat 06&#10;Hat 07&#10;Hat 08&#10;Hat 09&#10;Hat 10&#10;Hat 11&#10;Hat 12&#10;Hat 13&#10;Hat 14&#10;Hat 15&#10;Hat 16&#10;Hat 17&#10;Hat 18&#10;Hat 19&#10;Hat 20&#10;Hat 21&#10;Hat 22&#10;Hat 23&#10;Hat 24&#10;Hat 25&#10;Hat 26&#10;Hat 27&#10;Hat 28&#10;Hat 29&#10;Hat 30&#10;Hat 31&#10;Hat 32&#10;Hat 33&#10;Hat 34&#10;Hat 35&#10;Hat 36&#10;Hat 37&#10;Hat 38&#10;Hat 39&#10;Hat 40&#10;Hat13&#10;Kick 01&#10;Kick 02&#10;Kick 03&#10;Kick 04&#10;Kick 05&#10;Kick 06&#10;Kick 07&#10;Kick 08&#10;Kick 09&#10;Kick 10&#10;OH 01&#10;OH 02&#10;OH 03&#10;OH 04&#10;OH 05&#10;OH 06&#10;OH 07&#10;OH 08&#10;OH 09&#10;OH 10&#10;OH 11&#10;OH 12&#10;OH 13&#10;OH 14&#10;OH 15&#10;OH 16&#10;OH 17&#10;OH 19&#10;OH 20&#10;P 01&#10;P 02&#10;P 03&#10;P 04&#10;P 05&#10;P 06&#10;P 07&#10;P 08&#10;P 09&#10;P 10&#10;P 11&#10;P 12&#10;P 13&#10;P 14&#10;P 15&#10;P 16&#10;P 17&#10;P 18&#10;P 19&#10;P 20&#10;P 21&#10;P 22&#10;P 23&#10;P 24&#10;P 25&#10;P 26&#10;P 27&#10;P 28&#10;P 29&#10;P 30&#10;P 31&#10;P 32&#10;P 33&#10;P 34&#10;P 35&#10;P 36&#10;P 37&#10;P 38&#10;P 39&#10;P 40&#10;SB 01&#10;SB 02&#10;SB 03&#10;SB 04&#10;SB 05&#10;SB 06&#10;SB 07&#10;SB 08&#10;SB 09&#10;SB 10&#10;Snare 01&#10;Snare 02&#10;Snare 03&#10;Snare 04&#10;Snare 05&#10;Snare 06&#10;Snare 07&#10;Snare 08&#10;Snare 09&#10;Snare 10&#10;Snare 11&#10;Snare 12&#10;Snare 13&#10;Snare 14&#10;Snare 15&#10;Snare 16&#10;Snare 17&#10;Snare 18&#10;Snare 19&#10;Snare 20"
+               itemColour="0" width="30.0" bgColour="11382189" itemColour2="1118481"
+               parentComponent="Drum Panel" textColour="4290888129"/>
+  </Component>
+  <Component type="ScriptPanel" id="Piano Roll Panel" x="0.0" y="450.0" width="1000.0"
+             height="130.0" itemColour="0" bgColour="16777215" itemColour2="0"
+             textColour="16777215">
+    <Component type="ScriptFloatingTile" id="PianoRoll1" x="43.0" y="40.0" ContentType="Keyboard"
+               bgColour="6579300" itemColour="5110701" itemColour2="5110701"
+               textColour="5110701" Data="{&#13;&#10;  &quot;KeyWidth&quot;: 20.0,&#13;&#10;  &quot;DisplayOctaveNumber&quot;: true,&#13;&#10;  &quot;LowKey&quot;: 36,&#13;&#10;  &quot;HiKey&quot;: 59,&#13;&#10;  &quot;CustomGraphics&quot;: false,&#13;&#10;  &quot;DefaultAppearance&quot;: true,&#13;&#10;  &quot;BlackKeyRatio&quot;: 0.699999988079071,&#13;&#10;  &quot;ToggleMode&quot;: false,&#13;&#10;  &quot;MidiChannel&quot;: 1,&#13;&#10;  &quot;UseVectorGraphics&quot;: true,&#13;&#10;  &quot;UseFlatStyle&quot;: false,&#13;&#10;  &quot;MPEKeyboard&quot;: false,&#13;&#10;  &quot;MPEStartChannel&quot;: 2,&#13;&#10;  &quot;MPEEndChannel&quot;: 16&#13;&#10;}"
+               width="280.0" height="70.0" itemColour3="5110701" parentComponent="Piano Roll Panel"/>
+    <Component type="ScriptFloatingTile" id="PianoRoll2" x="366.0" y="40.0"
+               ContentType="Keyboard" bgColour="6579300" itemColour="4283300781"
+               itemColour2="4283300781" textColour="4283300781" Data="{&#13;&#10;  &quot;KeyWidth&quot;: 20.0,&#13;&#10;  &quot;DisplayOctaveNumber&quot;: true,&#13;&#10;  &quot;LowKey&quot;: 60,&#13;&#10;  &quot;HiKey&quot;: 83,&#13;&#10;  &quot;CustomGraphics&quot;: false,&#13;&#10;  &quot;DefaultAppearance&quot;: true,&#13;&#10;  &quot;BlackKeyRatio&quot;: 0.699999988079071,&#13;&#10;  &quot;ToggleMode&quot;: false,&#13;&#10;  &quot;MidiChannel&quot;: 1,&#13;&#10;  &quot;UseVectorGraphics&quot;: true,&#13;&#10;  &quot;UseFlatStyle&quot;: false,&#13;&#10;  &quot;MPEKeyboard&quot;: false,&#13;&#10;  &quot;MPEStartChannel&quot;: 2,&#13;&#10;  &quot;MPEEndChannel&quot;: 16&#13;&#10;}"
+               width="280.0" height="70.0" FontSize="12.0" itemColour3="4283300781"
+               parentComponent="Piano Roll Panel"/>
+    <Component type="ScriptFloatingTile" id="PianoRoll3" x="711.0" y="40.0"
+               ContentType="Keyboard" bgColour="6579300" itemColour="4283300781"
+               itemColour2="4283300781" textColour="4283300781" Data="{&#13;&#10;  &quot;KeyWidth&quot;: 25.0,&#13;&#10;  &quot;DisplayOctaveNumber&quot;: true,&#13;&#10;  &quot;LowKey&quot;: 84,&#13;&#10;  &quot;HiKey&quot;: 100,&#13;&#10;  &quot;CustomGraphics&quot;: false,&#13;&#10;  &quot;DefaultAppearance&quot;: true,&#13;&#10;  &quot;BlackKeyRatio&quot;: 0.699999988079071,&#13;&#10;  &quot;ToggleMode&quot;: false,&#13;&#10;  &quot;MidiChannel&quot;: 1,&#13;&#10;  &quot;UseVectorGraphics&quot;: true,&#13;&#10;  &quot;UseFlatStyle&quot;: false,&#13;&#10;  &quot;MPEKeyboard&quot;: false,&#13;&#10;  &quot;MPEStartChannel&quot;: 2,&#13;&#10;  &quot;MPEEndChannel&quot;: 16&#13;&#10;}"
+               width="250.0" height="70.0" FontSize="12.0" itemColour3="4283300781"
+               parentComponent="Piano Roll Panel"/>
+    <Component type="ScriptLabel" id="SynthBassLabel" x="122.0" y="-4.0" fontStyle="Regular"
+               fontSize="12.0" text="SYNTH BASS" editable="0" textColour="4291217094"
+               parentComponent="Piano Roll Panel"/>
+    <Component type="ScriptLabel" id="808BassLabel" x="443.0" y="-4.0" fontStyle="Regular"
+               fontSize="12.0" text="808 BASS" editable="0" textColour="4291217094"
+               parentComponent="Piano Roll Panel"/>
+    <Component type="ScriptLabel" id="DrumsLabel" x="767.0" y="-4.0" fontStyle="Regular"
+               fontSize="12.0" text="DRUM SAMPLES" editable="0" textColour="4291217094"
+               parentComponent="Piano Roll Panel"/>
+    <Component type="ScriptLabel" id="KickLabel" x="709.0" y="105.0" text="K"
+               fontSize="10.0" width="29.0" height="28.0" editable="0" textColour="4291217094"
+               parentComponent="Piano Roll Panel"/>
+    <Component type="ScriptLabel" id="Snare1Label" x="719.0" y="16.0" text="S1"
+               fontSize="10.0" width="29.0" height="28.0" editable="0" textColour="4291217094"
+               parentComponent="Piano Roll Panel"/>
+    <Component type="ScriptLabel" id="Snare2Label" x="734.0" y="105.0" text="S2"
+               fontSize="10.0" width="29.0" height="28.0" editable="0" textColour="4291217094"
+               parentComponent="Piano Roll Panel"/>
+    <Component type="ScriptLabel" id="Clap1Label" x="748.0" y="16.0" text="C1"
+               fontSize="10.0" width="29.0" height="28.0" editable="0" textColour="4291217094"
+               parentComponent="Piano Roll Panel"/>
+    <Component type="ScriptLabel" id="Clap2Label" x="759.0" y="105.0" text="C2"
+               fontSize="10.0" width="29.0" height="28.0" editable="0" textColour="4291217094"
+               parentComponent="Piano Roll Panel"/>
+    <Component type="ScriptLabel" id="Hat1Lab2" x="781.0" y="105.0" text="H1"
+               fontSize="10.0" width="35.0" height="28.0" editable="0" textColour="4291217094"
+               parentComponent="Piano Roll Panel"/>
+    <Component type="ScriptLabel" id="Hat2Lab2" x="789.0" y="16.0" text="H2"
+               fontSize="10.0" width="35.0" height="28.0" editable="0" textColour="4291217094"
+               parentComponent="Piano Roll Panel"/>
+    <Component type="ScriptLabel" id="Hat3Lab2" x="805.0" y="105.0" text="H3"
+               fontSize="10.0" width="35.0" height="28.0" editable="0" textColour="4291217094"
+               parentComponent="Piano Roll Panel"/>
+    <Component type="ScriptLabel" id="Hat4Lab2" x="818.0" y="16.0" text="H4"
+               fontSize="10.0" width="35.0" height="28.0" editable="0" textColour="4291217094"
+               parentComponent="Piano Roll Panel"/>
+    <Component type="ScriptLabel" id="OpenHat1Lab2" x="831.0" y="105.0" text="OH1"
+               fontSize="10.0" width="35.0" height="28.0" editable="0" textColour="4291217094"
+               parentComponent="Piano Roll Panel"/>
+    <Component type="ScriptLabel" id="OpenHat2Lab2" x="847.0" y="16.0" text="OH2"
+               fontSize="10.0" width="35.0" height="28.0" editable="0" textColour="4291217094"
+               parentComponent="Piano Roll Panel"/>
+    <Component type="ScriptLabel" id="CrashLab2" x="856.0" y="105.0" text="CR"
+               fontSize="10.0" width="35.0" height="28.0" editable="0" textColour="4291217094"
+               parentComponent="Piano Roll Panel"/>
+    <Component type="ScriptLabel" id="Perc1Lab2" x="883.0" y="105.0" text="P1"
+               fontSize="10.0" width="35.0" height="28.0" editable="0" textColour="4291217094"
+               parentComponent="Piano Roll Panel"/>
+    <Component type="ScriptLabel" id="Perc2Lab2" x="891.0" y="16.0" text="P2"
+               fontSize="10.0" width="35.0" height="28.0" editable="0" textColour="4291217094"
+               parentComponent="Piano Roll Panel"/>
+    <Component type="ScriptLabel" id="Perc3Lab2" x="906.0" y="105.0" text="P3"
+               fontSize="10.0" width="35.0" height="28.0" editable="0" textColour="4291217094"
+               parentComponent="Piano Roll Panel"/>
+    <Component type="ScriptLabel" id="Perc4Lab2" x="921.0" y="16.0" text="P4"
+               fontSize="10.0" width="35.0" height="28.0" editable="0" textColour="4291217094"
+               parentComponent="Piano Roll Panel"/>
+  </Component>
+  <Component type="ScriptPanel" id="Panel1" x="881.0" y="-1.0" width="120"
+             height="40" bgColour="16777215" textColour="1195524674" itemColour="1073741824"
+             itemColour2="1073741824"/>
+  <Component type="ScriptFloatingTile" id="PRESETS" x="374.0" y="119.0" width="250.0"
+             height="220.0" ContentType="PresetBrowser" bgColour="393730"
+             itemColour="16777215" itemColour2="4294967295" Data="{&#13;&#10;  &quot;ShowSaveButton&quot;: false,&#13;&#10;  &quot;ShowFolderButton&quot;: false,&#13;&#10;  &quot;ShowNotes&quot;: false,&#13;&#10;  &quot;ShowEditButtons&quot;: true,&#13;&#10;  &quot;ShowFavoriteIcon&quot;: false,&#13;&#10;  &quot;NumColumns&quot;: 1&#13;&#10;}"
+             itemColour3="4294967295" Font="Arial" FontSize="12.0"/>
+  <Component type="ScriptLabel" id="SETTINGS" x="887.0" y="5.0" fontSize="16.0"/>
+  <Component type="ScriptButton" id="hideShow" x="884.0" y="4.0" width="30"
+             height="30" bgColour="16777215" itemColour="3355443" itemColour2="1118481"
+             textColour="16777215" scaleFactor="2"/>
+  <Component type="ScriptPanel" id="panel1" x="645" y="36" width="350" height="420"
+             itemColour="4198185787" itemColour2="4194304000" visible="0">
+    <Component type="ScriptFloatingTile" id="FloatingTile1" x="4.0" y="2.0"
+               ContentType="CustomSettings" bgColour="4278190080" itemColour="0"
+               itemColour2="0" Data="{&#13;&#10;  &quot;Driver&quot;: true,&#13;&#10;  &quot;Device&quot;: true,&#13;&#10;  &quot;Output&quot;: true,&#13;&#10;  &quot;BufferSize&quot;: true,&#13;&#10;  &quot;SampleRate&quot;: true,&#13;&#10;  &quot;GlobalBPM&quot;: true,&#13;&#10;  &quot;StreamingMode&quot;: true,&#13;&#10;  &quot;ScaleFactor&quot;: true,&#13;&#10;  &quot;VoiceAmountMultiplier&quot;: true,&#13;&#10;  &quot;ClearMidiCC&quot;: true,&#13;&#10;  &quot;SampleLocation&quot;: true,&#13;&#10;  &quot;DebugMode&quot;: true,&#13;&#10;  &quot;ScaleFactorList&quot;: [&#13;&#10;    0.5,&#13;&#10;    0.75,&#13;&#10;    1.0,&#13;&#10;    1.25,&#13;&#10;    1.5,&#13;&#10;    2.0&#13;&#10;  ]&#13;&#10;}"
+               parentComponent="panel1" width="340" height="410"/>
+  </Component>
+</ContentProperties>

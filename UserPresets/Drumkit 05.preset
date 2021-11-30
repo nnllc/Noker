@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Preset Version="1.0.0">
+  <Content Processor="Interface">
+    <Control type="ScriptSlider" id="NokMainFXknb" value="0.0"/>
+    <Control type="ScriptSlider" id="AirMainFXknb" value="0.0"/>
+    <Control type="ScriptSlider" id="SynthBassAttknb" value="18.0"/>
+    <Control type="ScriptSlider" id="SynthBassRelknb" value="25.0"/>
+    <Control type="ScriptSlider" id="SynthBassHPknb" value="20.0"/>
+    <Control type="ScriptSlider" id="SynthBassLPknb" value="20000.0"/>
+    <Control type="ScriptSlider" id="808BassAttknb" value="0.0"/>
+    <Control type="ScriptSlider" id="808BassRelknb" value="18.0"/>
+    <Control type="ScriptSlider" id="808BassHPknb" value="20.0"/>
+    <Control type="ScriptSlider" id="808BassLPknb" value="20000.0"/>
+    <Control type="ScriptComboBox" id="SynthBassCombo" value="155.0"/>
+    <Control type="ScriptComboBox" id="Bass808Combo" value="5.0"/>
+    <Control type="ScriptSlider" id="SynthBassGainknb" value="-4.999998569488525"/>
+    <Control type="ScriptSlider" id="SynthBassGainknb1" value="-5.0"/>
+    <Control type="ScriptSlider" id="KickPanKnb" value="0.0"/>
+    <Control type="ScriptSlider" id="KickGainSld" value="1.192092895507813e-6"/>
+    <Control type="ScriptSlider" id="Snare1GainSld" value="1.192092895507813e-6"/>
+    <Control type="ScriptSlider" id="Snare1PanKnb" value="0.0"/>
+    <Control type="ScriptSlider" id="Snare2GainSld" value="1.192092895507813e-6"/>
+    <Control type="ScriptSlider" id="Snare2PanKnb" value="0.0"/>
+    <Control type="ScriptSlider" id="Clap1GainSld" value="1.192092895507813e-6"/>
+    <Control type="ScriptSlider" id="Clap1PanKnb" value="0.0"/>
+    <Control type="ScriptSlider" id="Clap2GainSld" value="-1.599998831748962"/>
+    <Control type="ScriptSlider" id="Clap2PanKnb" value="0.0"/>
+    <Control type="ScriptSlider" id="Hat1PanKnb" value="0.0"/>
+    <Control type="ScriptSlider" id="Hat1GainSld" value="1.192092895507813e-6"/>
+    <Control type="ScriptSlider" id="Hat2PanKnb" value="0.0"/>
+    <Control type="ScriptSlider" id="Hat2GainSld" value="1.192092895507813e-6"/>
+    <Control type="ScriptSlider" id="Hat3GainSld" value="1.192092895507813e-6"/>
+    <Control type="ScriptSlider" id="Hat3PanKnb" value="0.0"/>
+    <Control type="ScriptSlider" id="Hat4GainSld" value="1.192092895507813e-6"/>
+    <Control type="ScriptSlider" id="Hat4PanKnb" value="0.0"/>
+    <Control type="ScriptSlider" id="OpenHat1GainSld" value="1.192092895507813e-6"/>
+    <Control type="ScriptSlider" id="OpenHat1PanKnb" value="0.0"/>
+    <Control type="ScriptSlider" id="OpenHat2GainSld" value="1.192092895507813e-6"/>
+    <Control type="ScriptSlider" id="OpenHat2PanKnb" value="0.0"/>
+    <Control type="ScriptSlider" id="CrashPanKnb" value="0.0"/>
+    <Control type="ScriptSlider" id="CrashGainSld" value="1.192092895507813e-6"/>
+    <Control type="ScriptSlider" id="Perc1PanKnb" value="0.0"/>
+    <Control type="ScriptSlider" id="Perc1GainSld" value="1.192092895507813e-6"/>
+    <Control type="ScriptSlider" id="Perc2PanKnb" value="0.0"/>
+    <Control type="ScriptSlider" id="Perc2GainSld" value="1.192092895507813e-6"/>
+    <Control type="ScriptSlider" id="Perc3PanKnb" value="0.0"/>
+    <Control type="ScriptSlider" id="Perc3GainSld" value="1.192092895507813e-6"/>
+    <Control type="ScriptSlider" id="Perc4PanKnb" value="0.0"/>
+    <Control type="ScriptSlider" id="Perc4GainSld" value="1.192092895507813e-6"/>
+    <Control type="ScriptComboBox" id="KickCombo" value="86.0"/>
+    <Control type="ScriptComboBox" id="Snare1Combo" value="169.0"/>
+    <Control type="ScriptComboBox" id="Snare2Combo" value="170.0"/>
+    <Control type="ScriptComboBox" id="Perc1Combo" value="127.0"/>
+    <Control type="ScriptComboBox" id="Perc2Combo" value="128.0"/>
+    <Control type="ScriptComboBox" id="Perc3Combo" value="129.0"/>
+    <Control type="ScriptComboBox" id="Perc4Combo" value="130.0"/>
+    <Control type="ScriptComboBox" id="ClapCombo1" value="29.0"/>
+    <Control type="ScriptComboBox" id="ClapCombo2" value="30.0"/>
+    <Control type="ScriptComboBox" id="HatCombo1" value="57.0"/>
+    <Control type="ScriptComboBox" id="HatCombo2" value="58.0"/>
+    <Control type="ScriptComboBox" id="HatCombo3" value="59.0"/>
+    <Control type="ScriptComboBox" id="HatCombo4" value="60.0"/>
+    <Control type="ScriptComboBox" id="CrashCombo1" value="15.0"/>
+    <Control type="ScriptComboBox" id="OHCombo1" value="100.0"/>
+    <Control type="ScriptComboBox" id="OHCombo2" value="101.0"/>
+  </Content>
+  <MidiAutomation/>
+  <MPEData Enabled="0"/>
+</Preset>
